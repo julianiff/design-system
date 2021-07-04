@@ -1,6 +1,6 @@
 {
   "name": "iff-design-system",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "IFF Design System in lit 2.0",
   "main": "lib/index.js",
   "type": "module",
@@ -8,7 +8,7 @@
     "build": "node .esbuild.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "analyze": "wca analyze \"src/**/*.ts\" --outFile custom-elements.json",
-
+    "npm:publish": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
