@@ -1,12 +1,14 @@
 {
   "name": "iff-design-system",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "IFF Design System in lit 2.0",
   "main": "lib/index.js",
   "type": "module",
   "scripts": {
     "build": "node .esbuild.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "analyze": "wca analyze \"src/**/*.ts\" --outFile custom-elements.json",
+
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,12 @@
     "lit": "^2.0.0-rc.2"
   },
   "devDependencies": {
-    "esbuild": "^0.12.14"
-  }
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "esbuild": "^0.12.14",
+    "esbuild-plugin-lit-css": "^1.0.0",
+    "eslint": "^6.8.0",
+    "typescript": "^4.3.5"
+  },
+  "customElements": "custom-elements.json"
 }

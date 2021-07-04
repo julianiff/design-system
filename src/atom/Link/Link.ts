@@ -1,9 +1,9 @@
-import {LitElement, html, css} from 'lit';
+import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 import {ifDefined} from 'lit/directives/if-defined.js';
-import {viewVariants} from '../controller/ressources/views';
-import {LitCoilConnectedEvent} from '../controller/UpdateControllerConnectedEvent';
-
+import {viewVariants} from '../../controller/ressources/views';
+import {LitCoilConnectedEvent} from '../../controller/UpdateControllerConnectedEvent';
+import style from './Link.css';
 export type targetVariations = '_blank' | '_parent' | '_self' | '_top';
 
 /**
@@ -13,22 +13,7 @@ export type targetVariations = '_blank' | '_parent' | '_self' | '_top';
  */
 @customElement('iff-link')
 export class Link extends LitElement {
-  static styles = css`
-    a {
-      cursor: pointer;
-      text-decoration: none;
-      position: relative;
-      display: block;
-    }
-
-    :host :hover {
-      --iff-hover__font--color: var(--iff-alias__color--complement);
-    }
-
-    :host([active='true']) {
-      --iff-hover__font-color: var(--iff-alias__color--accent-one);
-    }
-  `;
+  static styles = [style];
 
   @property({reflect: true})
   public event?: viewVariants;

@@ -94,7 +94,7 @@ export const leftSideText = (props: TextTitle) => [
                     slotName: 'title',
                     component: 'iff-title',
                     props: [{level: 2}],
-                    innerText: 'Whoami',
+                    innerText: 'Who am i',
                     slots: [],
                   },
                   {
@@ -102,7 +102,7 @@ export const leftSideText = (props: TextTitle) => [
                     component: 'iff-title',
                     props: [{level: 4}],
                     innerText:
-                      'My passion is to create new digital features and products that transform how users achieve their goals.',
+                      'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
                     slots: [],
                   },
                 ],

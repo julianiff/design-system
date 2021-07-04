@@ -1,0 +1,50 @@
+:host {
+  font-family: var(--iff-alias__font--family);
+  transition: var(--iff-alias__transition);
+  color: var(
+    --iff-hover__font--color,
+    var(
+      --iff-state__font--color,
+      var(--iff__font--color, var(--iff-alias__font--color))
+    )
+  );
+  line-height: 180%;
+}
+:host([styling="paragraph"]) {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+:host([styling="paragraph-slim"]) {
+  font-weight: 100;
+  font-size: var(--iff__dimension--15);
+}
+
+:host([styling="paragraph-bold"]) {
+  font-weight: 700;
+  font-size: var(--iff__dimension--15);
+}
+
+:host([styling="label"]) {
+  font-weight: 400;
+  font-size: var(--iff__dimension--12);
+  line-height: 0.5rem;
+}
+
+:host([textAlign="left"]) {
+  text-align: left;
+}
+
+:host([textAlign="center"]) {
+  text-align: center;
+}
+
+:host([textAlign="right"]) {
+  text-align: right;
+}
+
+@media screen and (min-width: 1024px) {
+  :host([styling="paragraph"]) {
+    font-weight: 100;
+    font-size: calc(1.125rem + 0.25 * ((100vw - 48rem) / 42));
+  }
+}

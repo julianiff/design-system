@@ -1,0 +1,14 @@
+a {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+
+:host :hover {
+  --iff-hover__font--color: var(--iff-alias__color--complement);
+}
+
+:host([active="true"]) {
+  --iff-hover__font-color: var(--iff-alias__color--accent-one);
+}
