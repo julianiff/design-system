@@ -32,7 +32,7 @@ h3 {
 h4 {
   --iff-text__font--weight: var(--iff-font-alias__weight--bold);
   font-size: var(--iff-title__font-size, var(--iff__dimension--19));
-  line-height: 130%;
+  line-height: 150%;
 }
 
 :host([textAlign='left']) {

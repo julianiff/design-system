@@ -8,7 +8,7 @@
       var(--iff__font--color, var(--iff-alias__font--color))
     )
   );
-  line-height: 130%;
+  line-height: 150%;
 }
 :host([styling='paragraph']) {
   font-weight: 400;
