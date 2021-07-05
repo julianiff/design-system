@@ -11,3 +11,11 @@ build({
   format: 'esm',
   plugins: [litCssPlugin({uglify: true})],
 });
+
+build({
+  entryPoints: ['./src/styling/design.css'],
+  outfile: './lib/index.css',
+  bundle: true,
+  minify: true,
+  color: true,
+});
