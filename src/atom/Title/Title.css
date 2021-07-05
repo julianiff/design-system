@@ -32,35 +32,35 @@ h3 {
 h4 {
   --iff-text__font--weight: var(--iff-font-alias__weight--bold);
   font-size: var(--iff-title__font-size, var(--iff__dimension--20));
-  line-height: 1.75em;
+  line-height: 130%;
 }
 
-:host([textAlign="left"]) {
+:host([textAlign='left']) {
   --iff-text__text--align: left;
 }
 
-:host([textAlign="right"]) {
+:host([textAlign='right']) {
   --iff-text__text--align: left;
 }
 
-:host([surplus="giganto"]) {
+:host([surplus='giganto']) {
   --iff-title__font-size: 7rem;
 }
 
 @media screen and (min-width: 1024px) {
-  :host([surplus="giganto"]) {
+  :host([surplus='giganto']) {
     --iff-title__font-size: 10rem;
   }
 
-  :host([textAlign="left"]) {
+  :host([textAlign='left']) {
     --iff-text__text--align: left;
   }
 
-  :host([textAlign="center"]) {
+  :host([textAlign='center']) {
     --iff-text__text--align: center;
   }
 
-  :host([textAlign="right"]) {
+  :host([textAlign='right']) {
     --iff-text__text--align: right;
   }
 }

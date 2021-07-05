@@ -49,7 +49,7 @@ export class GridLayout extends LitElement {
   public layout?: layoutVariant = '1-1';
 
   render() {
-    return html` <slot></slot> `;
+    return html`<slot></slot>`;
   }
 }
 

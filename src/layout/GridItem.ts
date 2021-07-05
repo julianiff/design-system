@@ -117,7 +117,7 @@ export class GridItem extends LitElement {
   public background?: gridBackground;
 
   render() {
-    return html`<slot></slot> `;
+    return html`<slot></slot>`;
   }
 }
 
