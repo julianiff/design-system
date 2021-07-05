@@ -1,0 +1,783 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "iff-button",
+      "path": "./src/atom/Button/Button.ts",
+      "description": "Text Styling Component",
+      "attributes": [
+        {
+          "name": "event",
+          "description": "Type of styling",
+          "type": "\"Intro\" | \"Code\" | \"Typescript\" | \"Webcomponents\" | \"StateManagement\" | \"Azure\" | \"Node\" | undefined"
+        },
+        {
+          "name": "eventPayload",
+          "description": "Event Payload",
+          "type": "string",
+          "default": "\"payload\""
+        },
+        {
+          "name": "href",
+          "type": "string | undefined"
+        },
+        {
+          "name": "disabled",
+          "description": "Type of styling",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "array",
+          "default": "[\"style\"]"
+        },
+        {
+          "name": "event",
+          "attribute": "event",
+          "description": "Type of styling",
+          "type": "\"Intro\" | \"Code\" | \"Typescript\" | \"Webcomponents\" | \"StateManagement\" | \"Azure\" | \"Node\" | undefined"
+        },
+        {
+          "name": "eventPayload",
+          "attribute": "eventPayload",
+          "description": "Event Payload",
+          "type": "string",
+          "default": "\"payload\""
+        },
+        {
+          "name": "href",
+          "attribute": "href",
+          "type": "string | undefined"
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "Type of styling",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot of the element for the text"
+        }
+      ]
+    },
+    {
+      "name": "iff-link",
+      "path": "./src/atom/Link/Link.ts",
+      "description": "Text Styling Component",
+      "attributes": [
+        {
+          "name": "event",
+          "type": "\"Intro\" | \"Code\" | \"Typescript\" | \"Webcomponents\" | \"StateManagement\" | \"Azure\" | \"Node\" | undefined"
+        },
+        {
+          "name": "href",
+          "type": "string | undefined"
+        },
+        {
+          "name": "hreflang",
+          "type": "string | undefined"
+        },
+        {
+          "name": "label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "referrerpolicy",
+          "type": "string | undefined"
+        },
+        {
+          "name": "rel",
+          "type": "string | undefined"
+        },
+        {
+          "name": "target",
+          "type": "\"_blank\" | \"_parent\" | \"_self\" | \"_top\" | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "array",
+          "default": "[\"style\"]"
+        },
+        {
+          "name": "event",
+          "attribute": "event",
+          "type": "\"Intro\" | \"Code\" | \"Typescript\" | \"Webcomponents\" | \"StateManagement\" | \"Azure\" | \"Node\" | undefined"
+        },
+        {
+          "name": "href",
+          "attribute": "href",
+          "type": "string | undefined"
+        },
+        {
+          "name": "hreflang",
+          "attribute": "hreflang",
+          "type": "string | undefined"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "referrerpolicy",
+          "attribute": "referrerpolicy",
+          "type": "string | undefined"
+        },
+        {
+          "name": "rel",
+          "attribute": "rel",
+          "type": "string | undefined"
+        },
+        {
+          "name": "target",
+          "attribute": "target",
+          "type": "\"_blank\" | \"_parent\" | \"_self\" | \"_top\" | undefined"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot of the element for the text"
+        }
+      ]
+    },
+    {
+      "name": "iff-text",
+      "path": "./src/atom/Text/Text.ts",
+      "description": "Text Styling Component",
+      "attributes": [
+        {
+          "name": "styling",
+          "description": "Type of styling",
+          "type": "StylingVariation",
+          "default": "\"paragraph\""
+        },
+        {
+          "name": "textAlign",
+          "description": "Type of styling",
+          "type": "textAlignVars",
+          "default": "\"left\""
+        },
+        {
+          "name": "tag",
+          "type": "\"p\"",
+          "default": "\"p\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "array",
+          "default": "[\"style\"]"
+        },
+        {
+          "name": "styling",
+          "attribute": "styling",
+          "description": "Type of styling",
+          "type": "StylingVariation",
+          "default": "\"paragraph\""
+        },
+        {
+          "name": "textAlign",
+          "attribute": "textAlign",
+          "description": "Type of styling",
+          "type": "textAlignVars",
+          "default": "\"left\""
+        },
+        {
+          "name": "tag",
+          "attribute": "tag",
+          "type": "\"p\"",
+          "default": "\"p\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot of the element for the text"
+        }
+      ]
+    },
+    {
+      "name": "iff-title",
+      "path": "./src/atom/Title/Title.ts",
+      "description": "Text Styling Component",
+      "attributes": [
+        {
+          "name": "textAlign",
+          "description": "Type of textAlignation",
+          "default": "\"left\""
+        },
+        {
+          "name": "level",
+          "description": "Level of styling",
+          "type": "HLevel",
+          "default": "3"
+        },
+        {
+          "name": "surplus",
+          "description": "Level of styling",
+          "type": "\"giganto\" | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "array",
+          "default": "[\"style\"]"
+        },
+        {
+          "name": "textAlign",
+          "attribute": "textAlign",
+          "description": "Type of textAlignation",
+          "default": "\"left\""
+        },
+        {
+          "name": "level",
+          "attribute": "level",
+          "description": "Level of styling",
+          "type": "HLevel",
+          "default": "3"
+        },
+        {
+          "name": "surplus",
+          "attribute": "surplus",
+          "description": "Level of styling",
+          "type": "\"giganto\" | undefined"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "This element has a slot"
+        }
+      ]
+    },
+    {
+      "name": "iff-grid-item",
+      "path": "./src/layout/GridItem.ts",
+      "description": "An example element.",
+      "attributes": [
+        {
+          "name": "orientation",
+          "description": "Orientation 'positive' | 'negative' | 'complement';",
+          "type": "gridOrientation",
+          "default": "\"start\""
+        },
+        {
+          "name": "spacer",
+          "description": "Orientation 'positive' | 'negative' | 'complement';",
+          "type": "spacerVariant",
+          "default": "\"sm\""
+        },
+        {
+          "name": "width",
+          "description": "Width",
+          "type": "gridWidth",
+          "default": "\"full\""
+        },
+        {
+          "name": "height",
+          "description": "Height",
+          "type": "\"default\" | \"full\" | undefined"
+        },
+        {
+          "name": "background",
+          "description": "Background Color",
+          "type": "\"positive\" | \"negative\" | \"complement\" | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host([orientation='start']) {\\n      justify-self: start;\\n    }\\n\\n    :host([orientation='center']) {\\n      justify-self: center;\\n    }\\n\\n    :host([orientation='end']) {\\n      justify-self: end;\\n    }\\n\\n    :host([width='slim']) {\\n      width: 100%;\\n    }\\n\\n    :host([width='default']) {\\n      width: 100%;\\n    }\\n\\n    :host([width='full']) {\\n      width: 100%;\\n    }\\n\\n    :host([spacer='sm']) {\\n      padding: var(--iff__spacer--sm);\\n    }\\n\\n    :host([spacer='md']) {\\n      padding: var(--iff__spacer--md);\\n    }\\n\\n    :host([spacer='lg']) {\\n      padding: var(--iff__spacer--lg);\\n    }\\n\\n    :host([spacer='component']) {\\n      padding: var(--iff__spacer--xxl);\\n    }\\n\\n    :host([background='positive']) {\\n      background: var(--iff-alias__color--positive);\\n    }\\n\\n    :host([background='negative']) {\\n      background: var(--iff-alias__color--negative);\\n    }\\n\\n    :host([background='complement']) {\\n      background: var(--iff-alias__color--complement);\\n    }\\n\\n    @media screen and (min-width: 1024px) {\\n      :host([height='full']) {\\n        min-height: 80vh;\\n      }\\n\\n      :host([width='slim']) {\\n        width: 600px;\\n      }\\n\\n      :host([width='default']) {\\n        width: 1024px;\\n      }\\n\\n      :host([width='full']) {\\n        width: 100%;\\n      }\\n    }\\n  `\""
+        },
+        {
+          "name": "orientation",
+          "attribute": "orientation",
+          "description": "Orientation 'positive' | 'negative' | 'complement';",
+          "type": "gridOrientation",
+          "default": "\"start\""
+        },
+        {
+          "name": "spacer",
+          "attribute": "spacer",
+          "description": "Orientation 'positive' | 'negative' | 'complement';",
+          "type": "spacerVariant",
+          "default": "\"sm\""
+        },
+        {
+          "name": "width",
+          "attribute": "width",
+          "description": "Width",
+          "type": "gridWidth",
+          "default": "\"full\""
+        },
+        {
+          "name": "height",
+          "attribute": "height",
+          "description": "Height",
+          "type": "\"default\" | \"full\" | undefined"
+        },
+        {
+          "name": "background",
+          "attribute": "background",
+          "description": "Background Color",
+          "type": "\"positive\" | \"negative\" | \"complement\" | undefined"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot for the content"
+        }
+      ]
+    },
+    {
+      "name": "iff-grid-layout",
+      "path": "./src/layout/GridLayout.ts",
+      "description": "An example element.",
+      "attributes": [
+        {
+          "name": "layout",
+          "description": "Height",
+          "type": "\"1\" | \"1-1\" | \"1-1-1\" | undefined",
+          "default": "\"1-1\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      display: grid;\\n      grid-template-rows: auto;\\n    }\\n\\n    :host([layout='1']) {\\n      grid-template-columns: 1fr;\\n    }\\n\\n    :host([layout='1-1']) {\\n      grid-template-columns: 1fr;\\n    }\\n\\n    :host([layout='1-1-1']) {\\n      grid-template-columns: 1fr;\\n    }\\n\\n    @media screen and (min-width: 1024px) {\\n      :host([layout='1']) {\\n        grid-template-columns: 1fr;\\n      }\\n\\n      :host([layout='1-1']) {\\n        grid-template-columns: 1fr 1fr;\\n      }\\n\\n      :host([layout='1-1-1']) {\\n        grid-template-columns: 1fr 1fr 1fr;\\n      }\\n    }\\n  `\""
+        },
+        {
+          "name": "layout",
+          "attribute": "layout",
+          "description": "Height",
+          "type": "\"1\" | \"1-1\" | \"1-1-1\" | undefined",
+          "default": "\"1-1\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot for the content"
+        }
+      ]
+    },
+    {
+      "name": "iff-button-list",
+      "path": "./src/molecule/ButtonList.ts",
+      "description": "Card to display articles",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      display: flex;\\n      flex-wrap: wrap;\\n    }\\n    ::slotted(*) {\\n      --iff-card__padding--top-bottom: 0.15rem;\\n      --iff-card__padding--left-right: 0.15rem;\\n      margin: 0.5rem;\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot to set title"
+        }
+      ]
+    },
+    {
+      "name": "iff-card",
+      "path": "./src/molecule/Card.ts",
+      "description": "Card to display articles",
+      "attributes": [
+        {
+          "name": "url",
+          "description": "The number of times the button has been clicked.",
+          "type": "string",
+          "default": "\"url.to.link.to\""
+        },
+        {
+          "name": "backgroundColor",
+          "description": "The number of times the button has been clicked.",
+          "type": "string",
+          "default": "\"--iff-alias__color--complement\""
+        },
+        {
+          "name": "imageSrc",
+          "description": "Source of the header image\nhttps://picsum.photos/200/200",
+          "type": "string",
+          "default": "\"dev/Download.jpeg\""
+        },
+        {
+          "name": "event",
+          "description": "Type of styling",
+          "type": "\"Intro\" | \"Code\" | \"Typescript\" | \"Webcomponents\" | \"StateManagement\" | \"Azure\" | \"Node\" | undefined"
+        },
+        {
+          "name": "eventPayload",
+          "description": "Type of styling",
+          "type": "string",
+          "default": "\"payload\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      cursor: pointer;\\n      display: flex;\\n      flex-direction: column;\\n      background-color: var(--iff-card__background-color);\\n      --iff-state__font--color: white;\\n    }\\n\\n    .card {\\n      transition: all 500ms ease-in;\\n      display: flex;\\n      flex-direction: column;\\n      height: 100%;\\n      width: 100%;\\n      border-radius: var(--iff-alias__border--radius);\\n      overflow: hidden;\\n    }\\n\\n    .card:hover {\\n      box-shadow: 0px 0px 50px 1px var(--iff-alias__color--complement);\\n      transition: all 250ms ease-in;\\n    }\\n\\n    img {\\n      border-radius: var(--iff-alias__border--radius);\\n      height: 10rem;\\n    }\\n\\n    .body {\\n      padding: var(--iff__dimension--20);\\n      text-overflow: ellipsis;\\n    }\\n\\n    @media screen and (min-width: 1024px) {\\n      .card {\\n        flex-direction: row;\\n        height: 25vh;\\n      }\\n      img {\\n        height: 100%;\\n        width: 200px;\\n      }\\n    }\\n  `\""
+        },
+        {
+          "name": "url",
+          "attribute": "url",
+          "description": "The number of times the button has been clicked.",
+          "type": "string",
+          "default": "\"url.to.link.to\""
+        },
+        {
+          "name": "backgroundColor",
+          "attribute": "backgroundColor",
+          "description": "The number of times the button has been clicked.",
+          "type": "string",
+          "default": "\"--iff-alias__color--complement\""
+        },
+        {
+          "name": "imageSrc",
+          "attribute": "imageSrc",
+          "description": "Source of the header image\nhttps://picsum.photos/200/200",
+          "type": "string",
+          "default": "\"dev/Download.jpeg\""
+        },
+        {
+          "name": "event",
+          "attribute": "event",
+          "description": "Type of styling",
+          "type": "\"Intro\" | \"Code\" | \"Typescript\" | \"Webcomponents\" | \"StateManagement\" | \"Azure\" | \"Node\" | undefined"
+        },
+        {
+          "name": "eventPayload",
+          "attribute": "eventPayload",
+          "description": "Type of styling",
+          "type": "string",
+          "default": "\"payload\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "custom",
+          "description": "Slot to override all Card"
+        },
+        {
+          "name": "body",
+          "description": "Slot to override body part"
+        },
+        {
+          "name": "title",
+          "description": "Slot to set Card Title"
+        },
+        {
+          "name": "lead",
+          "description": "Slot to set Card lead text"
+        },
+        {
+          "name": "footer",
+          "description": "Slot to set footer"
+        }
+      ],
+      "cssParts": [
+        {
+          "name": "button",
+          "description": "The button"
+        }
+      ]
+    },
+    {
+      "name": "iff-icon-text",
+      "path": "./src/molecule/IconText.ts",
+      "description": "Card to display articles",
+      "attributes": [
+        {
+          "name": "event",
+          "type": "\"Intro\" | \"Code\" | \"Typescript\" | \"Webcomponents\" | \"StateManagement\" | \"Azure\" | \"Node\" | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    .icon-text {\\n      display: flex;\\n      flex-direction: row;\\n      align-items: center;\\n      cursor: pointer;\\n    }\\n\\n    svg {\\n      fill: var(\\n        --iff-icon-text__font--color,\\n        var(--iff-hover__font--color, var(--iff-alias__font--color))\\n      );\\n      height: var(--iff__spacer--md);\\n      width: var(--iff__spacer--md);\\n      transform: rotate(180deg) translateX(var(--iff-icon-text__offset));\\n      margin-right: var(--iff__spacer--xs);\\n      transition: var(--iff-alias__transition);\\n    }\\n\\n    :host {\\n      --iff-icon-text__offset: 0px;\\n    }\\n\\n    :host :hover {\\n      --iff-hover__font--color: var(--iff-alias__color--complement);\\n      --iff-icon-text__offset: 5px;\\n    }\\n  `\""
+        },
+        {
+          "name": "event",
+          "attribute": "event",
+          "type": "\"Intro\" | \"Code\" | \"Typescript\" | \"Webcomponents\" | \"StateManagement\" | \"Azure\" | \"Node\" | undefined"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot to set title"
+        }
+      ]
+    },
+    {
+      "name": "iff-title-lead",
+      "path": "./src/molecule/TitleLead.ts",
+      "description": "Card to display articles",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    .title-lead {\\n      height: 100%;\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "title",
+          "description": "Slot to set title"
+        },
+        {
+          "name": "modal-text",
+          "description": "Slot to set text of modal"
+        }
+      ]
+    },
+    {
+      "name": "iff-footer",
+      "path": "./src/organism/Footer.ts",
+      "description": "Text Styling Component",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      padding: 0px var(--iff-dynamic__navigation--indent);\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "This element has a slot"
+        }
+      ]
+    },
+    {
+      "name": "iff-header",
+      "path": "./src/organism/Header.ts",
+      "description": "Text Styling Component",
+      "attributes": [
+        {
+          "name": "position",
+          "type": "number | undefined",
+          "default": "0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      position: sticky;\\n      top: 0;\\n      width: 100%;\\n      z-index: 100;\\n      height: var(--iff-alias__header--height);\\n      padding: 0px var(--iff-dynamic__navigation--indent);\\n      border-bottom: 2px solid var(--iff-alias__color--positive);\\n      background-color: var(--iff-alias__body--background-color);\\n      transition: border-bottom var(--iff-alias__transition--intervall);\\n    }\\n\\n    :host([position='0']) {\\n      border-bottom: 0px solid var(--iff-alias__color--positive);\\n      transition: border-bottom var(--iff-alias__transition--intervall);\\n    }\\n  `\""
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "type": "number | undefined",
+          "default": "0"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "This element has a slot"
+        }
+      ]
+    },
+    {
+      "name": "iff-head-navigation",
+      "path": "./src/organism/Navigation.ts",
+      "description": "An example element.",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    nav {\\n      display: grid;\\n      grid-template-columns: 1fr 1fr;\\n      justify-content: center;\\n      height: 100%;\\n    }\\n\\n    ::slotted([slot='start']) {\\n      justify-self: start;\\n    }\\n\\n    ::slotted([slot='end']) {\\n      justify-self: end;\\n      padding-right: var(--iff__spacer--xl);\\n    }\\n\\n    .end {\\n      display: flex;\\n      flex-direction: row;\\n      justify-content: flex-end;\\n      align-items: center;\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot for the content"
+        }
+      ]
+    },
+    {
+      "name": "iff-base-page",
+      "path": "./src/page/BasePage.ts",
+      "description": "An example element.",
+      "attributes": [
+        {
+          "name": "view",
+          "description": "Type of styling",
+          "type": "\"Intro\" | \"Code\" | \"Typescript\" | \"Webcomponents\" | \"StateManagement\" | \"Azure\" | \"Node\" | undefined"
+        },
+        {
+          "name": "theme",
+          "description": "Type of styling",
+          "type": "ThemeVariation",
+          "default": "\"blue-gradiant\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup[]",
+          "default": "[null]"
+        },
+        {
+          "name": "view",
+          "attribute": "view",
+          "description": "Type of styling",
+          "type": "\"Intro\" | \"Code\" | \"Typescript\" | \"Webcomponents\" | \"StateManagement\" | \"Azure\" | \"Node\" | undefined"
+        },
+        {
+          "name": "theme",
+          "attribute": "theme",
+          "description": "Type of styling",
+          "type": "ThemeVariation",
+          "default": "\"blue-gradiant\""
+        }
+      ]
+    },
+    {
+      "name": "iff-column-layout",
+      "path": "./src/template/ColumnLayout.ts",
+      "description": "An example element.",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      display: flex;\\n      align-content: space-between;\\n      justify-content: center;\\n      align-items: flex-start;\\n      flex-flow: row wrap;\\n      height: 100%;\\n    }\\n\\n    ::slotted(*) {\\n      max-width: 100%;\\n      padding-bottom: 2.5rem;\\n    }\\n\\n    @media screen and (min-width: 1024px) {\\n      ::slotted(*) {\\n        max-width: 100%;\\n        padding-bottom: 0;\\n      }\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot for the content"
+        }
+      ]
+    },
+    {
+      "name": "iff-page-layout",
+      "path": "./src/template/PageLayout.ts",
+      "description": "An example element.",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      position: relative;\\n      display: flex;\\n      flex-direction: column;\\n      transition: all 250ms ease-in;\\n    }\\n\\n    @media screen and (min-width: 1024px) {\\n      :host {\\n        display: initial;\\n      }\\n    }\\n\\n    [name='body']::slotted(*) {\\n      min-height: 100%;\\n    }\\n\\n    .footer-layout {\\n      display: flex;\\n      justify-content: center;\\n      padding-top: 1rem;\\n    }\\n    .body-layout {\\n      display: flex;\\n      justify-content: center;\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "header",
+          "description": "Slot to set header"
+        },
+        {
+          "name": "body",
+          "description": "Slot to set body"
+        },
+        {
+          "name": "footer",
+          "description": "Slot to set footer"
+        }
+      ]
+    },
+    {
+      "name": "iff-row-layout",
+      "path": "./src/template/RowLayout.ts",
+      "description": "An example element.",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      display: flex;\\n      flex-direction: row;\\n      justify-content: space-evenly;\\n      align-items: center;\\n      flex-wrap: wrap;\\n    }\\n\\n    ::slotted(*) {\\n      max-width: 90%;\\n      margin: 2.5%;\\n    }\\n\\n    @media screen and (min-width: 724px) {\\n      ::slotted(*) {\\n        max-width: 80%;\\n        margin: 2.5%;\\n      }\\n    }\\n    @media screen and (min-width: 1024px) {\\n      ::slotted(*) {\\n        max-width: 1200px;\\n        margin: 1%;\\n      }\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot for the content"
+        }
+      ]
+    },
+    {
+      "name": "iff-slim-layout",
+      "path": "./src/template/SlimLayout.ts",
+      "description": "Text Styling Component",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      width: 800px;\\n    }\\n\\n    @media screen and (min-width: 1024px) {\\n      :host([height='full']) {\\n        min-height: 80vh;\\n      }\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Slot of the element for the text"
+        }
+      ]
+    },
+    {
+      "name": "iff-split",
+      "path": "./src/template/SplitAnim.ts",
+      "description": "Text Styling Component",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      position: relative;\\n      display: flex;\\n      align-items: flex-end;\\n      flex-direction: column;\\n    }\\n\\n    [name='start-text']::slotted(*) {\\n      padding: 25px;\\n    }\\n\\n    [name='end-text']::slotted(*) {\\n      padding: 25px;\\n    }\\n\\n    .start {\\n      transition: all 250ms ease-in;\\n    }\\n\\n    .end {\\n      background-color: var(--iff-alias__background-color--complement);\\n      transition: all 250ms ease-in;\\n      border-radius: var(--iff-alias__border--radius);\\n    }\\n\\n    .end:hover {\\n      background-color: var(--iff-alias__color--primary);\\n      --iff__font--color: var(--iff-alias__color--negative);\\n      --iff-hover__font--color: var(--iff-alias__color--negative);\\n      transition: all 250ms ease-in;\\n    }\\n\\n    @media screen and (min-width: 724px) {\\n      :host {\\n        position: relative;\\n        display: flex;\\n        height: 70vh;\\n        align-items: stretch;\\n        flex-direction: row;\\n      }\\n\\n      .start {\\n        width: 50%;\\n        height: auto;\\n      }\\n\\n      .end {\\n        background-color: var(--iff-alias__background-color--primary);\\n        width: 50%;\\n        height: auto;\\n      }\\n\\n      [name='start-text']::slotted(*) {\\n        display: block;\\n        padding: 25px;\\n      }\\n\\n      [name='end-text']::slotted(*) {\\n        display: block;\\n        padding: 25px;\\n      }\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "start-text",
+          "description": "Slot to set the first text"
+        },
+        {
+          "name": "end-text",
+          "description": "Slot to set the end text"
+        }
+      ]
+    },
+    {
+      "name": "iff-third-one-layout",
+      "path": "./src/template/ThirdOneLayout.ts",
+      "description": "Text Styling Component",
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResultGroup",
+          "default": "\"css`\\n    :host {\\n      position: relative;\\n      display: flex;\\n      align-items: center;\\n      flex-wrap: wrap;\\n      width: 100%;\\n      justify-content: space-around;\\n    }\\n\\n    @media screen and (min-width: 1024px) {\\n      .start {\\n        width: 60vw;\\n        height: 100%;\\n      }\\n      .end {\\n        width: 30vw;\\n        height: 100%;\\n      }\\n    }\\n  `\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "start",
+          "description": "Slot to set the first text"
+        },
+        {
+          "name": "end",
+          "description": "Slot to set the end text"
+        }
+      ]
+    }
+  ]
+}
