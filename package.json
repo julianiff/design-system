@@ -1,6 +1,6 @@
 {
   "name": "iff-design-system",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "IFF Design System in lit 2.0",
   "main": "lib/index.js",
   "type": "module",
