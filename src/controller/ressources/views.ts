@@ -99,16 +99,16 @@ export const leftSideText = (props: TextTitle) => [
                   },
                   {
                     slotName: 'lead-text',
-                    component: 'iff-title',
-                    props: [{level: 4}],
+                    component: 'iff-text',
+                    props: [{styling: 'paragraph'}],
                     innerText:
                       'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
                     slots: [],
                   },
                   {
                     slotName: 'lead-text',
-                    component: 'iff-title',
-                    props: [{level: 4}],
+                    component: 'iff-text',
+                    props: [{styling: 'paragraph'}],
                     innerText:
                       'I work in both front- and backend with a dose of pipelines and build processes.',
                     slots: [],
@@ -150,7 +150,7 @@ export const Views: ViewType = {
                       slotName: 'title',
                       component: 'iff-title',
                       props: [{level: 2}],
-                      innerText: 'What I like',
+                      innerText: 'my interests',
                       slots: [],
                     },
                     {
@@ -492,16 +492,16 @@ export const Views: ViewType = {
                     },
                     {
                       slotName: 'lead-text',
-                      component: 'iff-title',
-                      props: [{level: 4}],
+                      component: 'iff-text',
+                      props: [{styling: 'paragraph'}],
                       innerText:
                         'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
                       slots: [],
                     },
                     {
                       slotName: 'lead-text',
-                      component: 'iff-title',
-                      props: [{level: 4}],
+                      component: 'iff-text',
+                      props: [{styling: 'paragraph'}],
                       innerText:
                         'I work in both front- and backend with a dose of pipelines and build processes.',
                       slots: [],
@@ -517,23 +517,23 @@ export const Views: ViewType = {
   ],
   Typescript: leftSideText({
     title: 'Typescript',
-    text: 'All of my current projects have their codebase in Typescript and are transpiled with modern build Tools (Webpack, Rollup.js) to Javascript.',
+    text: 'Fluent in both Typescript and Javascript. Most of the projects are written in Typescript and transpiled to Javascript..',
   }),
   StateManagement: leftSideText({
     title: 'State Management',
-    text: 'React Project mainly used Redux with redux-saga. For smaller projects or components, I prefer React State Management with hook-reducers or recoil. Web Components mainly use event state management, redux or Apollo/GraphQl.',
+    text: 'Mobx, Redux / Redux-saga, Recoil and Apollo are preferred state Management Libraries. For smaller React applications also hook reducer can be a pragmatic solution.',
   }),
   Webcomponents: leftSideText({
     title: 'Webcomponents & Lit',
-    text: 'Web components are unique in encapsulating styling, and Lit.dev is a great library that allows building Web components in a declarative and Fluent style. This Website is also #BuildWithLit.',
+    text: 'Web components are unique in encapsulating styling and structure. Lit.dev is a great library that allows building Web components in a declarative and fluent style. This Website is also #BuildWithLit.',
   }),
   Node: leftSideText({
     title: 'Node',
-    text: 'Services built with express.js and Koa.js. Use of MVC pattern as well as micro-services for specific APIs. I always enjoy making Azure Functions in Typescript with queue triggers.',
+    text: 'Micro Services built with express.js / Koa.js. Use of MVC and micro-service deployment patterns. Cloud ready solutions with Azure function, AWS Labmba and Service queues.',
   }),
   Azure: leftSideText({
-    title: 'Node',
-    text: 'Services built with express.js and Koa.js. Use of MVC pattern as well as micro-services for specific APIs. I always enjoy making Azure Functions in Typescript with queue triggers.',
+    title: 'Azure',
+    text: 'Paas and Saas solutions from Azure. Azure Functions, Logic Apps or Spring Cloud clusters.',
   }),
   Code: [
     {
