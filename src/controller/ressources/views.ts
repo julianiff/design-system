@@ -150,7 +150,7 @@ export const Views: ViewType = {
                       slotName: 'title',
                       component: 'iff-title',
                       props: [{level: 2}],
-                      innerText: 'my interests',
+                      innerText: 'What I like',
                       slots: [],
                     },
                     {
