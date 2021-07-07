@@ -38,7 +38,7 @@
   --iff-alias__footer--height: var(--iff__dimension--50);
   --iff-alias__header--height: var(--iff__dimension--50);
 
-  --iff-dynamic__navigation--indent: 15vw;
+  --iff-dynamic__navigation--indent: 3vw;
   --iff-alias__navigation--ztop: 100;
   /**
   Font styling
@@ -61,6 +61,13 @@
     --iff-state__button--border-radius,
     var(--iff__dimension--05)
   );
+}
+
+@media screen and (min-width: 1024px) {
+  :host,
+  :root {
+    --iff-dynamic__navigation--indent: 15vw;
+  }
 }
 
 body {
