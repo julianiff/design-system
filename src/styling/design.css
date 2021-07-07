@@ -46,7 +46,7 @@
   --iff-font-alias__weight--thin: 100;
   --iff-font-alias__weight--default: 400;
   --iff-font-alias__weight--bold: 700;
-  --iff-alias__font--family: var(--iff__font--family);
+  /* --iff-alias__font--family: var(--iff__font--family); */
 
   /**
   Anmiations

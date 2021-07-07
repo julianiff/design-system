@@ -94,7 +94,7 @@ export const leftSideText = (props: TextTitle) => [
                     slotName: 'title',
                     component: 'iff-title',
                     props: [{level: 2}],
-                    innerText: 'Who am i',
+                    innerText: 'Who am I',
                     slots: [],
                   },
                   {

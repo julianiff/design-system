@@ -1,0 +1,30 @@
+:host {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+:host([layout='1']) {
+  grid-template-columns: 1fr;
+}
+
+:host([layout='1-1']) {
+  grid-template-columns: 1fr;
+}
+
+:host([layout='1-1-1']) {
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 1024px) {
+  :host([layout='1']) {
+    grid-template-columns: 1fr;
+  }
+
+  :host([layout='1-1']) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  :host([layout='1-1-1']) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

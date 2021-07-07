@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script
+      async
+      src="../node_modules/es-module-shims/dist/es-module-shims.js"
+    ></script>
+    <script
+      async
+      src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"
+    ></script>
+    <script async src="../lib/index.js"></script>
+    <title>Test</title>
+
+    <link rel="stylesheet" href="../lib/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+    </style>
+  </head>
+  <body theme="blue-gradiant">
+    <iff-button><iff-text styling="label">Button</iff-text></iff-button>
+    <iff-link><iff-text styling="paragraph">Link paragraph</iff-text></iff-link>
+    <iff-text styling="paragraph">paragraph</iff-text>
+    <iff-text styling="paragraph-slim">paragraph-slim</iff-text>
+    <iff-text styling="paragraph-bold">paragraph-bold</iff-text>
+    <iff-text styling="label">label</iff-text>
+    <iff-title level="1">title h1</iff-title>
+    <iff-title level="2">title h2</iff-title>
+    <iff-title level="3">title h3</iff-title>
+    <iff-title level="4">title h4</iff-title>
+
+    <iff-title level="3">Layout 1-1-1</iff-title>
+    <iff-grid-layout layout="1-1-1">
+      <iff-grid-item style="background-color: green" gridWidth="full"
+        >one</iff-grid-item
+      >
+      <iff-grid-item style="background-color: blue" gridWidth="full"
+        >two</iff-grid-item
+      >
+      <iff-grid-item style="background-color: yellow" gridWidth="full"
+        >three</iff-grid-item
+      >
+    </iff-grid-layout>
+    <iff-title level="3">Layout 1-1</iff-title>
+    <iff-grid-layout layout="1-1">
+      <iff-grid-item style="background-color: green" gridWidth="full"
+        >one</iff-grid-item
+      >
+      <iff-grid-item style="background-color: blue" gridWidth="full"
+        >two</iff-grid-item
+      >
+    </iff-grid-layout>
+
+    <iff-base-page view="Intro"></iff-base-page>
+    <iff-base-page view="Node"></iff-base-page>
+  </body>
+</html>

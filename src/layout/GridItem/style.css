@@ -1,0 +1,69 @@
+:host([orientation='start']) {
+  justify-self: start;
+}
+
+:host([orientation='center']) {
+  justify-self: center;
+}
+
+:host([orientation='end']) {
+  justify-self: end;
+}
+
+:host([width='slim']) {
+  width: 100%;
+}
+
+:host([width='default']) {
+  width: 100%;
+}
+
+:host([width='full']) {
+  width: 100%;
+}
+
+:host([spacer='sm']) {
+  padding: var(--iff__spacer--sm);
+}
+
+:host([spacer='md']) {
+  padding: var(--iff__spacer--md);
+}
+
+:host([spacer='lg']) {
+  padding: var(--iff__spacer--lg);
+}
+
+:host([spacer='component']) {
+  padding: var(--iff__spacer--xxl);
+}
+
+:host([background='positive']) {
+  background: var(--iff-alias__color--positive);
+}
+
+:host([background='negative']) {
+  background: var(--iff-alias__color--negative);
+}
+
+:host([background='complement']) {
+  background: var(--iff-alias__color--complement);
+}
+
+@media screen and (min-width: 1024px) {
+  :host([height='full']) {
+    min-height: 80vh;
+  }
+
+  :host([width='slim']) {
+    width: 600px;
+  }
+
+  :host([width='default']) {
+    width: 1024px;
+  }
+
+  :host([width='full']) {
+    width: 100%;
+  }
+}

@@ -1,5 +1,5 @@
 :host {
-  font-family: var(--iff-alias__font--family);
+  font-family: var(--iff__font--family);
   transition: var(--iff-alias__transition);
   color: var(
     --iff-hover__font--color,

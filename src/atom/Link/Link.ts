@@ -4,6 +4,7 @@ import {ifDefined} from 'lit/directives/if-defined.js';
 import {viewVariants} from '../../controller/ressources/views';
 import {LitCoilConnectedEvent} from '../../controller/UpdateControllerConnectedEvent';
 import style from './Link.css';
+
 export type targetVariations = '_blank' | '_parent' | '_self' | '_top';
 
 /**

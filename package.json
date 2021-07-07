@@ -5,10 +5,13 @@
   "main": "lib/index.js",
   "type": "module",
   "scripts": {
+    "serve": "concurrently \"web-dev-server --open dev/ --node-resolve --watch\" \"npm run watch\"",
     "build": "node .esbuild.js",
+    "watch": "node .esbuild.watch.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "analyze": "wca analyze \"src/**/*.ts\" --outFile custom-elements.json",
-    "npm:publish": "npm run build && npm publish"
+    "npm:publish": "npm run build && npm publish",
+    "ci": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -34,13 +37,20 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
-    "typescript": "^4.3.5",
+    "@web/dev-server": "^0.0.29",
+    "@web/dev-server-legacy": "^0.1.4",
+    "@web/dev-server-rollup": "^0.2.7",
+    "@webcomponents/webcomponentsjs": "^2.5.0",
+    "concurrently": "^6.2.0",
+    "es-module-shims": "^0.12.1",
     "esbuild": "^0.12.14",
     "esbuild-plugin-lit-css": "^1.0.0",
     "eslint": "^6.8.0",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "semantic-release": "^17.4.4",
+    "typescript": "^4.3.5"
   },
   "customElements": "custom-elements.json"
 }
