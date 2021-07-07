@@ -105,6 +105,14 @@ export const leftSideText = (props: TextTitle) => [
                       'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
                     slots: [],
                   },
+                  {
+                    slotName: 'lead-text',
+                    component: 'iff-title',
+                    props: [{level: 4}],
+                    innerText:
+                      'I work in both front- and backend with a dose of pipelines and build processes.',
+                    slots: [],
+                  },
                 ],
               },
             ],
@@ -479,7 +487,7 @@ export const Views: ViewType = {
                       slotName: 'title',
                       component: 'iff-title',
                       props: [{level: 2}],
-                      innerText: 'Whoami',
+                      innerText: 'Who am I',
                       slots: [],
                     },
                     {
@@ -487,7 +495,15 @@ export const Views: ViewType = {
                       component: 'iff-title',
                       props: [{level: 4}],
                       innerText:
-                        'My passion is to create new digital features and products that transform how users achieve their goals.',
+                        'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
+                      slots: [],
+                    },
+                    {
+                      slotName: 'lead-text',
+                      component: 'iff-title',
+                      props: [{level: 4}],
+                      innerText:
+                        'I work in both front- and backend with a dose of pipelines and build processes.',
                       slots: [],
                     },
                   ],

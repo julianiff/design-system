@@ -1,5 +1,5 @@
 import '../Link';
-import {LitElement, html, css} from 'lit';
+import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 import {viewVariants} from '../../controller/ressources/views';
 import {LitCoilConnectedEvent} from '../../controller/UpdateControllerConnectedEvent';

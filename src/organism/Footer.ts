@@ -54,7 +54,7 @@ export class Footer extends LitElement {
         </iff-button>
         </iff-button>
         <iff-button @click=${() => this.setThemeColor('spotify')}>
-          <iff-text styling="label">spotify</iff-text>
+          <iff-text styling="label">green</iff-text>
         </iff-button>
         </iff-button>
         <iff-button @click=${() => this.setThemeColor('pantone')}>

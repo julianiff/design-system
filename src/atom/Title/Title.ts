@@ -1,6 +1,6 @@
-import {LitElement, html, css} from 'lit';
+import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
-import {textAlignVars} from '../Text';
+import {textAlignVars} from '../Text/Text';
 import style from './Title.css';
 
 export type HLevel = 1 | 2 | 3 | 4;
