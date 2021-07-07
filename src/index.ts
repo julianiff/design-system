@@ -8,6 +8,7 @@ import './molecule/Card';
 import './molecule/TitleLead';
 import './molecule/ButtonList';
 import './molecule/IconText';
+import './molecule/AnimatedContainer';
 import './organism/Header';
 import './organism/Footer';
 import './organism/Navigation';

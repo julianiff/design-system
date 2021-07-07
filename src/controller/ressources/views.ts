@@ -87,31 +87,38 @@ export const leftSideText = (props: TextTitle) => [
               },
               {
                 slotName: 'end-text',
-                component: 'iff-title-lead',
+                component: 'iff-animated-container',
                 props: [],
                 slots: [
                   {
-                    slotName: 'title',
-                    component: 'iff-title',
-                    props: [{level: 2}],
-                    innerText: 'Who am I',
-                    slots: [],
-                  },
-                  {
-                    slotName: 'lead-text',
-                    component: 'iff-text',
-                    props: [{styling: 'paragraph'}],
-                    innerText:
-                      'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
-                    slots: [],
-                  },
-                  {
-                    slotName: 'lead-text',
-                    component: 'iff-text',
-                    props: [{styling: 'paragraph'}],
-                    innerText:
-                      'I work in both front- and backend with a dose of pipelines and build processes.',
-                    slots: [],
+                    slotName: '',
+                    component: 'iff-title-lead',
+                    props: [],
+                    slots: [
+                      {
+                        slotName: 'title',
+                        component: 'iff-title',
+                        props: [{level: 2}],
+                        innerText: 'Who am I',
+                        slots: [],
+                      },
+                      {
+                        slotName: 'lead-text',
+                        component: 'iff-text',
+                        props: [{styling: 'paragraph'}],
+                        innerText:
+                          'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
+                        slots: [],
+                      },
+                      {
+                        slotName: 'lead-text',
+                        component: 'iff-text',
+                        props: [{styling: 'paragraph'}],
+                        innerText:
+                          'I work in both front- and backend with a dose of pipelines and build processes.',
+                        slots: [],
+                      },
+                    ],
                   },
                 ],
               },
@@ -480,31 +487,38 @@ export const Views: ViewType = {
                 },
                 {
                   slotName: 'end-text',
-                  component: 'iff-title-lead',
+                  component: 'iff-animated-container',
                   props: [],
                   slots: [
                     {
-                      slotName: 'title',
-                      component: 'iff-title',
-                      props: [{level: 2}],
-                      innerText: 'Who am I',
-                      slots: [],
-                    },
-                    {
-                      slotName: 'lead-text',
-                      component: 'iff-text',
-                      props: [{styling: 'paragraph'}],
-                      innerText:
-                        'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
-                      slots: [],
-                    },
-                    {
-                      slotName: 'lead-text',
-                      component: 'iff-text',
-                      props: [{styling: 'paragraph'}],
-                      innerText:
-                        'I work in both front- and backend with a dose of pipelines and build processes.',
-                      slots: [],
+                      slotName: '',
+                      component: 'iff-title-lead',
+                      props: [],
+                      slots: [
+                        {
+                          slotName: 'title',
+                          component: 'iff-title',
+                          props: [{level: 2}],
+                          innerText: 'Who am I',
+                          slots: [],
+                        },
+                        {
+                          slotName: 'lead-text',
+                          component: 'iff-text',
+                          props: [{styling: 'paragraph'}],
+                          innerText:
+                            'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
+                          slots: [],
+                        },
+                        {
+                          slotName: 'lead-text',
+                          component: 'iff-text',
+                          props: [{styling: 'paragraph'}],
+                          innerText:
+                            'I work in both front- and backend with a dose of pipelines and build processes.',
+                          slots: [],
+                        },
+                      ],
                     },
                   ],
                 },
