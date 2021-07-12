@@ -2,6 +2,7 @@ import {build} from 'esbuild';
 import {litCssPlugin} from 'esbuild-plugin-lit-css';
 import fs from 'fs';
 import rimraf from 'rimraf';
+import chalk from 'chalk';
 
 const OUTPUT_DIR = './lib';
 
@@ -13,7 +14,11 @@ const buildAsIndependentBundles = (indexDir = './src/index.ts') => {
     .map((line) => line.split("'"))
     .filter((item) => item != '')
     .map((item) => `./src${item[1].replace('.', '')}`);
-  console.log('Building with following Bundles', entries);
+  console.log(
+    `${chalk.yellow('Building with following Bundles')} ${chalk.green(
+      ...entries
+    )}`
+  );
   return [indexDir, ...entries];
 };
 

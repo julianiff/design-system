@@ -16,9 +16,9 @@ export class ButtonList extends LitElement {
       flex-wrap: wrap;
     }
     ::slotted(*) {
-      --iff-card__padding--top-bottom: 0.15rem;
-      --iff-card__padding--left-right: 0.15rem;
-      margin: 0.5rem;
+      --iff-card__padding--top-bottom: var(--iff__dimension--015);
+      --iff-card__padding--left-right: var(--iff__dimension--015);
+      margin: var(--iff-alias__spacer, var(--iff__spacer--xs));
     }
   `;
 

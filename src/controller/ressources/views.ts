@@ -1,6 +1,5 @@
 export type viewVariants =
   | 'Intro'
-  | 'Code'
   | 'Typescript'
   | 'Webcomponents'
   | 'StateManagement'
@@ -531,11 +530,11 @@ export const Views: ViewType = {
   ],
   Typescript: leftSideText({
     title: 'Typescript',
-    text: 'Fluent in both Typescript and Javascript. Most of the projects are written in Typescript and transpiled to Javascript..',
+    text: 'Fluent in both Typescript and Javascript. Wrote many Projects in Typescript and Node.js services or build systems in Javascript.',
   }),
   StateManagement: leftSideText({
     title: 'State Management',
-    text: 'Mobx, Redux / Redux-saga, Recoil and Apollo are preferred state Management Libraries. For smaller React applications also hook reducer can be a pragmatic solution.',
+    text: 'Mobx, Redux / Redux-saga, Recoil and Apollo are preferred State Management Libraries. For smaller React applications also hook reducer can be a pragmatic solution.',
   }),
   Webcomponents: leftSideText({
     title: 'Webcomponents & Lit',
@@ -543,133 +542,10 @@ export const Views: ViewType = {
   }),
   Node: leftSideText({
     title: 'Node',
-    text: 'Micro Services built with express.js / Koa.js. Use of MVC and micro-service deployment patterns. Cloud ready solutions with Azure function, AWS Labmba and Service queues.',
+    text: 'Micro Services built with express.js / Koa.js. Use of MVC and micro-service deployment patterns. Cloud ready solutions with Azure function, AWS Labmba and queues.',
   }),
   Azure: leftSideText({
     title: 'Azure',
     text: 'Paas and Saas solutions from Azure. Azure Functions, Logic Apps or Spring Cloud clusters.',
   }),
-  Code: [
-    {
-      component: 'iff-page-layout',
-      props: [{theme: 'dark'}],
-      innerText: '',
-      slots: [
-        {
-          slotName: 'header',
-          component: 'iff-title',
-          props: [{level: '1'}],
-          innerText: 'Julian Iff',
-          slots: [],
-        },
-        {
-          slotName: 'header',
-          component: 'iff-title',
-          props: [{level: '4'}],
-          innerText: 'Code Projects',
-          slots: [],
-        },
-        {
-          slotName: 'header',
-          component: 'iff-icon-text',
-          props: [{event: 'Intro'}],
-          innerText: '',
-          slots: [
-            {
-              slotName: 'text',
-              component: 'iff-text',
-              props: [{styling: 'paragraph'}],
-              innerText: 'Overview',
-              slots: [],
-            },
-          ],
-        },
-        {
-          slotName: 'body',
-          component: 'iff-slim-layout',
-          props: [],
-          slots: [
-            {
-              slotName: '',
-              component: 'iff-card',
-              props: [
-                {
-                  imageSrc: 'images/blocks.jpeg',
-                },
-                {backgroundColor: '--iff-alias__color--accent-one'},
-                {event: 'JsonToLit'},
-              ],
-              slots: [
-                {
-                  slotName: 'title',
-                  component: 'iff-title',
-                  props: [{level: '4'}],
-                  innerText: 'JSON to Lit (Webcomponents)',
-                  slots: [],
-                },
-                {
-                  slotName: 'lead',
-                  component: 'iff-text',
-                  props: [{styling: 'paragraph-slim'}],
-                  innerText:
-                    'Input JSON to generate Lit Webcomponents. Can be useful for headless CMS Systems or Design Systems.',
-                  slots: [],
-                },
-              ],
-            },
-            {
-              slotName: '',
-              component: 'iff-card',
-              props: [
-                {imageSrc: 'images/line_down.jpeg'},
-                {backgroundColor: '--iff-alias__color--accent-two'},
-              ],
-              slots: [
-                {
-                  slotName: 'title',
-                  component: 'iff-title',
-                  props: [{level: '4'}],
-                  innerText: '&lt; iff-* Design System',
-                  slots: [],
-                },
-                {
-                  slotName: 'lead',
-                  component: 'iff-text',
-                  props: [{styling: 'paragraph-slim'}],
-                  innerText:
-                    'A small design system built with Lit Webcomponents with CSS and Slot Stacking',
-                  slots: [],
-                },
-              ],
-            },
-            {
-              slotName: '',
-              component: 'iff-card',
-              props: [
-                {imageSrc: 'images/round_block.jpeg'},
-                {backgroundColor: '--iff-alias__color--accent-three'},
-              ],
-              slots: [
-                {
-                  slotName: 'title',
-                  component: 'iff-title',
-                  props: [{level: '4'}],
-                  innerText: 'Flyby-Test Suite',
-                  slots: [],
-                },
-                {
-                  slotName: 'lead',
-                  component: 'iff-text',
-                  props: [{styling: 'paragraph-slim'}],
-                  innerText:
-                    'Integration API Test Suite to automate Regression tests.',
-                  slots: [],
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-  ],
 };
