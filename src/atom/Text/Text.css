@@ -12,8 +12,14 @@
 }
 :host([styling='paragraph']) {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: var(--iff__dimension--18);
 }
+
+:host([styling='lead']) {
+  font-weight: 100;
+  font-size: var(--iff__text--lead, var(--iff__dimension--25));
+}
+
 :host([styling='paragraph-slim']) {
   font-weight: 100;
   font-size: var(--iff__dimension--15);
@@ -45,5 +51,8 @@
 @media screen and (min-width: 1024px) {
   :host([styling='paragraph']) {
     font-size: calc(1.125rem + 0.25 * ((100vw - 48rem) / 42));
+  }
+  :host([styling='lead']) {
+    font-size: calc(1.325rem + 0.25 * ((100vw - 48rem) / 42));
   }
 }

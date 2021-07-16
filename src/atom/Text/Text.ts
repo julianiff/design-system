@@ -3,6 +3,7 @@ import {customElement, property} from 'lit/decorators.js';
 import style from './Text.css';
 
 type StylingVariation =
+  | 'lead'
   | 'paragraph'
   | 'paragraph-slim'
   | 'paragraph-bold'
