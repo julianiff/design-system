@@ -16,7 +16,6 @@ export class Header extends LitElement {
       top: 0;
       width: 100%;
       z-index: 100;
-      height: var(--iff-alias__header--height);
       padding: 0px var(--iff-dynamic__navigation--indent);
       border-bottom: 2px solid var(--iff-alias__color--positive);
       background-color: var(--iff-alias__body--background-color);
