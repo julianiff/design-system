@@ -4,6 +4,7 @@ export type viewVariants =
   | 'Webcomponents'
   | 'StateManagement'
   | 'Azure'
+  | 'Spring'
   | 'Node';
 
 type ViewType = {
@@ -303,7 +304,22 @@ export const Views: ViewType = {
                         {
                           slotName: '',
                           component: 'iff-button',
-                          props: [{disabled: 'true'}],
+                          props: [{event: 'Spring'}],
+                          innerText: '',
+                          slots: [
+                            {
+                              slotName: '',
+                              component: 'iff-text',
+                              props: [{styling: 'label'}],
+                              innerText: 'Spring',
+                              slots: [],
+                            },
+                          ],
+                        },
+                        {
+                          slotName: '',
+                          component: 'iff-button',
+                          props: [{event: 'Spring'}],
                           innerText: '',
                           slots: [
                             {
@@ -547,5 +563,9 @@ export const Views: ViewType = {
   Azure: leftSideText({
     title: 'Azure',
     text: 'Paas and Saas solutions from Azure. Azure Functions, Logic Apps or Spring Cloud clusters.',
+  }),
+  Spring: leftSideText({
+    title: 'Spring',
+    text: 'Spring makes it simple to quickly deliver production-grade Microservices, can be used with Kotlin and is Framework for fast and Secure applications.',
   }),
 };
