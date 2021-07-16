@@ -2,6 +2,7 @@ import './atom/Title';
 import './atom/Text';
 import './atom/Link';
 import './atom/Button';
+import './atom/Svg';
 import './layout/GridItem';
 import './layout/GridLayout';
 import './molecule/Card';

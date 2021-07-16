@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "type": "module",
   "scripts": {
-    "serve": "concurrently \"web-dev-server --open dev/ --node-resolve --watch\" \"npm run watch\"",
+    "serve": "concurrently \"web-dev-server --open dev/ --node-resolve --watch\" \"npm run watch\" \"tsc --noEmit\"",
     "build": "node .esbuild.js",
     "watch": "node .esbuild.watch.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@lit-labs/motion": "^1.0.0-rc.2",
+    "@types/jest": "^26.0.24",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "@web/dev-server": "^0.1.18",
