@@ -121,7 +121,7 @@ export const leftSideText = (props: TextTitle) => [
                         component: 'iff-text',
                         props: [{styling: 'paragraph'}],
                         innerText:
-                          'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
+                          'My name is Julian Iff, I am a Software Engineer and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
                         slots: [],
                       },
                       {
@@ -536,7 +536,7 @@ export const Views: ViewType = {
                           component: 'iff-text',
                           props: [{styling: 'paragraph'}],
                           innerText:
-                            'My name is Julian Iff, and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
+                            'My name is Julian Iff, I am a Software Engineer and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
                           slots: [],
                         },
                         {
