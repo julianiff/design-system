@@ -14,6 +14,9 @@ type ViewType = {
 interface TextTitle {
   text: string;
   title: string;
+  link?: string;
+  linkText?: string;
+  linkTarget?: string;
 }
 
 export const leftSideText = (props: TextTitle) => [
@@ -79,6 +82,17 @@ export const leftSideText = (props: TextTitle) => [
                         component: 'iff-text',
                         props: [],
                         innerText: props.text,
+                        slots: [],
+                      },
+                      {
+                        slotName: '',
+                        component: 'iff-icon-text',
+                        props: [
+                          {href: props.link},
+                          {icon: props.link && 'end'},
+                          {target: props.linkTarget},
+                        ],
+                        innerText: props.linkText,
                         slots: [],
                       },
                     ],
@@ -547,6 +561,8 @@ export const Views: ViewType = {
   Typescript: leftSideText({
     title: 'Typescript',
     text: 'Fluent in both Typescript and Javascript. Wrote many Projects in Typescript and Node.js services or build systems in Javascript.',
+    linkText: 'Javascript Tipps',
+    link: '/project/javascript/',
   }),
   StateManagement: leftSideText({
     title: 'State Management',
@@ -555,10 +571,15 @@ export const Views: ViewType = {
   Webcomponents: leftSideText({
     title: 'Webcomponents & Lit',
     text: 'Web components are unique in encapsulating styling and structure. Lit.dev is a great library that allows building Web components in a declarative and fluent style. This Website is also #BuildWithLit.',
+    linkText: 'Design System',
+    link: '/project/design-system/',
   }),
   Node: leftSideText({
     title: 'Node',
     text: 'Micro Services built with express.js / Koa.js. Use of MVC and micro-service deployment patterns. Cloud ready solutions with Azure function, AWS Labmba and queues.',
+    linkText: 'Lit SSR Server Test',
+    linkTarget: '_blank',
+    link: 'https://github.com/julianiff/lit-ssr/tree/master',
   }),
   Azure: leftSideText({
     title: 'Azure',
@@ -567,5 +588,7 @@ export const Views: ViewType = {
   Spring: leftSideText({
     title: 'Spring',
     text: 'Spring makes it simple to quickly deliver production-grade Microservices, can be used with Kotlin and is a framework for fast and Secure applications.',
+    linkText: 'Spring Reactive',
+    link: '/project/spring-reactive/',
   }),
 };
