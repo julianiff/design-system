@@ -8,8 +8,23 @@
       var(--iff__font--color, var(--iff-alias__font--color))
     )
   );
+}
+
+:host {
   line-height: 150%;
 }
+
+:host([noLineHeight]) {
+  line-height: 0;
+}
+
+:host([noLineHeight]) p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 :host([styling='paragraph']) {
   font-weight: 400;
   font-size: var(--iff__dimension--18);
