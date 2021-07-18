@@ -1,0 +1,39 @@
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+:host([icon='start']) svg {
+  font-weight: 400;
+  font-size: var(--iff__dimension--18);
+  transform: rotate(180deg) translateX(var(--iff-icon-text__offset));
+  margin-right: var(--iff__spacer--xs);
+}
+
+:host([icon='end']) svg {
+  font-weight: 400;
+  font-size: var(--iff__dimension--18);
+  transform: translateX(var(--iff-icon-text__offset));
+  margin-left: var(--iff__spacer--xs);
+}
+
+svg {
+  fill: var(
+    --iff-icon-text__font--color,
+    var(--iff-hover__font--color, var(--iff-alias__font--color))
+  );
+  height: var(--iff__spacer--md);
+  width: var(--iff__spacer--md);
+  transition: var(--iff-alias__transition);
+}
+
+:host {
+  --iff-icon-text__offset: 0px;
+}
+
+:host :hover {
+  --iff-hover__font--color: var(--iff-alias__color--complement);
+  --iff-icon-text__offset: 5px;
+}

@@ -47,11 +47,11 @@ export const leftSideText = (props: TextTitle) => [
                       {
                         slotName: '',
                         component: 'iff-icon-text',
-                        props: [{event: 'Intro'}],
+                        props: [{event: 'Intro'}, {icon: 'start'}],
                         innerText: '',
                         slots: [
                           {
-                            slotName: 'text',
+                            slotName: '',
                             component: 'iff-text',
                             props: [{styling: 'paragraph'}],
                             innerText: 'Overview',
@@ -566,6 +566,6 @@ export const Views: ViewType = {
   }),
   Spring: leftSideText({
     title: 'Spring',
-    text: 'Spring makes it simple to quickly deliver production-grade Microservices, can be used with Kotlin and is Framework for fast and Secure applications.',
+    text: 'Spring makes it simple to quickly deliver production-grade Microservices, can be used with Kotlin and is a framework for fast and Secure applications.',
   }),
 };
