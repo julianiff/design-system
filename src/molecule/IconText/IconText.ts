@@ -5,6 +5,8 @@ import {LitElement, html, svg, nothing} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 import {LitCoilConnectedEvent} from '../../controller/UpdateControllerConnectedEvent';
 import {viewVariants} from '../../controller/ressources/views';
+import {targetVariations} from '../../atom/Link/Link';
+import {ifDefined} from 'lit/directives/if-defined';
 
 import style from './style.css';
 /**
@@ -25,6 +27,9 @@ export class IconText extends LitElement {
   // set the event that gets fired
   @property()
   public href?: string;
+  // set the event that gets fired
+  @property()
+  public target?: targetVariations;
 
   // Set the position of the icon
   @property({reflect: true})
@@ -32,7 +37,9 @@ export class IconText extends LitElement {
 
   render() {
     return this.href
-      ? html`<iff-link href=${this.href}>${this.setIconRender()}</iff-link>`
+      ? html`<iff-link href=${this.href} target=${ifDefined(this.target)}
+          >${this.setIconRender()}</iff-link
+        >`
       : this.setIconRender();
   }
 
