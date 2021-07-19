@@ -132,6 +132,19 @@ export const leftSideText = (props: TextTitle) => [
                           'I work in both front- and backend with a dose of pipelines and build processes.',
                         slots: [],
                       },
+                      {
+                        slotName: 'lead-text',
+                        component: 'iff-icon-text',
+                        props: [
+                          {
+                            href: 'https://www.linkedin.com/in/julian-iff-36882661/',
+                          },
+                          {icon: 'end'},
+                          {target: '_blank'},
+                        ],
+                        innerText: 'Get in Touch!',
+                        slots: [],
+                      },
                     ],
                   },
                 ],
@@ -547,6 +560,19 @@ export const Views: ViewType = {
                             'I work in both front- and backend with a dose of pipelines and build processes.',
                           slots: [],
                         },
+                        {
+                          slotName: 'lead-text',
+                          component: 'iff-icon-text',
+                          props: [
+                            {
+                              href: 'https://www.linkedin.com/in/julian-iff-36882661/',
+                            },
+                            {icon: 'end'},
+                            {target: '_blank'},
+                          ],
+                          innerText: 'Get in Touch!',
+                          slots: [],
+                        },
                       ],
                     },
                   ],
@@ -562,6 +588,7 @@ export const Views: ViewType = {
     title: 'Typescript',
     text: 'Fluent in both Typescript and Javascript. Wrote many Projects in Typescript and Node.js services or build systems in Javascript.',
     linkText: 'Javascript Tipps',
+    linkTarget: '_self',
     link: '/project/javascript/',
   }),
   StateManagement: leftSideText({
@@ -572,6 +599,7 @@ export const Views: ViewType = {
     title: 'Webcomponents & Lit',
     text: 'Web components are unique in encapsulating styling and structure. Lit.dev is a great library that allows building Web components in a declarative and fluent style. This Website is also #BuildWithLit.',
     linkText: 'Design System',
+    linkTarget: '_self',
     link: '/project/design-system/',
   }),
   Node: leftSideText({
@@ -589,6 +617,7 @@ export const Views: ViewType = {
     title: 'Spring',
     text: 'Spring makes it simple to quickly deliver production-grade Microservices, can be used with Kotlin and is a framework for fast and Secure applications.',
     linkText: 'Spring Reactive',
+    linkTarget: '_self',
     link: '/project/spring-reactive/',
   }),
 };
