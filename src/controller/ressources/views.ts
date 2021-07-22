@@ -638,7 +638,7 @@ export const Views: ViewType = {
   }),
   DevOps: leftSideText({
     title: 'DevOps',
-    text: 'To be able to release often and with confidence it is needed to have resilient pipelines and release Architecures with for example Github actions, Gitlab and Azure Pipelines. Espetially important are Micro-service deployments and Frontend Deployment strategies.',
+    text: 'To be able to release often and with confidence it is needed to have resilient pipelines and release Architecures in systems like Github actions, Gitlab and Azure Pipelines. Espetially interesting are Micro-service deployments and frontend deployment strategies.',
     linkText: 'Buildless Deployments',
     linkTarget: '_self',
     link: '/project/import-map',
