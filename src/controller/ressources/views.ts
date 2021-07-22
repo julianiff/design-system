@@ -5,6 +5,7 @@ export type viewVariants =
   | 'StateManagement'
   | 'Azure'
   | 'Spring'
+  | 'DevOps'
   | 'Node';
 
 type ViewType = {
@@ -523,6 +524,21 @@ export const Views: ViewType = {
                             },
                           ],
                         },
+                        {
+                          slotName: '',
+                          component: 'iff-button',
+                          props: [{event: 'DevOps'}],
+                          innerText: '',
+                          slots: [
+                            {
+                              slotName: '',
+                              component: 'iff-text',
+                              props: [{styling: 'label'}],
+                              innerText: 'DevOps',
+                              slots: [],
+                            },
+                          ],
+                        },
                       ],
                     },
                   ],
@@ -619,5 +635,12 @@ export const Views: ViewType = {
     linkText: 'Spring Reactive',
     linkTarget: '_self',
     link: '/project/spring-reactive/',
+  }),
+  DevOps: leftSideText({
+    title: 'DevOps',
+    text: 'Pipelines and Release Architecures with Github Action, Gitlab Pipelines and Azure Pipelines. Archictures for Micro-service Deployments and also Frontend Deployment Strategries.',
+    linkText: 'Buildless Deployments',
+    linkTarget: '_self',
+    link: '/project/import-map',
   }),
 };
