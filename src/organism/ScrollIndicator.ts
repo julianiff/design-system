@@ -1,7 +1,7 @@
 import {LitElement, html, css} from 'lit';
-import {customElement, property} from 'lit/decorators.js';
-import {fromEvent} from 'rxjs';
-import {tap} from 'rxjs/operators';
+import {customElement} from 'lit/decorators.js';
+import {styleMap} from 'lit/directives/style-map';
+import {ScrollIndicatorController} from '../controller/scrollIndicatorController copy';
 
 /**
  * An example element.
@@ -12,25 +12,17 @@ import {tap} from 'rxjs/operators';
 export class ScrollIndicator extends LitElement {
   static styles = css``;
 
-  connectedCallback() {
-    super.connectedCallback();
-
-    console.log(this.width);
-    fromEvent(document, 'scroll')
-      .pipe(tap({next: (_) => this.setScroll(this.width)}))
-      .subscribe();
-  }
-
-  @property({type: Number})
-  width: number = 5;
-
-  private setScroll(input: number) {
-    console.log(input);
-    this.width = input + 1;
-  }
+  private scrollIndicatorController = new ScrollIndicatorController(this);
 
   render() {
-    return html`<div style="height: 300vh;">${this.width}</div>`;
+    const styling = {
+      width: `${this.scrollIndicatorController.width}` + '%',
+      'background-color': 'green',
+      height: '250vh',
+    };
+    return html`<div style=${styleMap(styling)}>
+      ${this.scrollIndicatorController.width}
+    </div>`;
   }
 }
 

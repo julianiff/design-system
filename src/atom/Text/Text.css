@@ -48,7 +48,7 @@
 :host([styling='label']) {
   font-weight: 400;
   font-size: var(--iff__dimension--12);
-  line-height: 0.5rem;
+  line-height: 1rem;
 }
 
 :host([textAlign='left']) {
