@@ -406,24 +406,16 @@ export const Views: ViewType = {
                         },
                         {
                           slotName: '',
-                          component: 'iff-animated-container',
-                          props: [],
+                          component: 'iff-button',
+                          props: [{disabled: 'true'}],
                           innerText: '',
                           slots: [
                             {
                               slotName: '',
-                              component: 'iff-button',
-                              props: [{disabled: 'true'}],
-                              innerText: '',
-                              slots: [
-                                {
-                                  slotName: '',
-                                  component: 'iff-text',
-                                  props: [{styling: 'label'}],
-                                  innerText: 'K8s',
-                                  slots: [],
-                                },
-                              ],
+                              component: 'iff-text',
+                              props: [{styling: 'label'}],
+                              innerText: 'K8s',
+                              slots: [],
                             },
                           ],
                         },
@@ -489,16 +481,24 @@ export const Views: ViewType = {
                         },
                         {
                           slotName: '',
-                          component: 'iff-button',
-                          props: [{href: '/project/design-system/'}],
+                          component: 'iff-animated-container',
+                          props: [],
                           innerText: '',
                           slots: [
                             {
                               slotName: '',
-                              component: 'iff-text',
-                              props: [{styling: 'label'}],
-                              innerText: 'Design System',
-                              slots: [],
+                              component: 'iff-button',
+                              props: [{href: '/project/design-system/'}],
+                              innerText: '',
+                              slots: [
+                                {
+                                  slotName: '',
+                                  component: 'iff-text',
+                                  props: [{styling: 'label'}],
+                                  innerText: 'Design System',
+                                  slots: [],
+                                },
+                              ],
                             },
                           ],
                         },
@@ -534,16 +534,24 @@ export const Views: ViewType = {
                         },
                         {
                           slotName: '',
-                          component: 'iff-button',
-                          props: [{href: '/project/apollo/'}],
+                          component: 'iff-animated-container',
+                          props: [],
                           innerText: '',
                           slots: [
                             {
                               slotName: '',
-                              component: 'iff-text',
-                              props: [{styling: 'label'}],
-                              innerText: 'Apollo / GraphQL',
-                              slots: [],
+                              component: 'iff-button',
+                              props: [{href: '/project/apollo/'}],
+                              innerText: '',
+                              slots: [
+                                {
+                                  slotName: '',
+                                  component: 'iff-text',
+                                  props: [{styling: 'label'}],
+                                  innerText: 'Apollo / GraphQL',
+                                  slots: [],
+                                },
+                              ],
                             },
                           ],
                         },
