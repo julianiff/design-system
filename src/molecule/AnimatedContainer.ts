@@ -14,11 +14,11 @@ import {flip} from '@lit-labs/motion';
 export class AnimatedContainer extends LitElement {
   static styles = css`
     .box {
-      transform: translateX(10px);
+      transform: translateX(0px);
     }
 
     .shifted {
-      transform: translateX(0px);
+      transform: translateX(-5px);
     }
   `;
 
