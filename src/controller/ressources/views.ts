@@ -575,7 +575,7 @@ export const Views: ViewType = {
                   ],
                 },
                 {
-                  slotName: '',
+                  slotName: 'end-text',
                   component: 'iff-title-lead',
                   props: [],
                   slots: [
