@@ -42,7 +42,7 @@ export class AnimatedContainer extends LitElement {
     `;
   }
 
-  _toggle(e: any) {
+  _toggle() {
     this.shifted = !this.shifted;
   }
 }

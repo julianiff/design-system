@@ -55,11 +55,11 @@ export class GridItem extends LitElement {
 
   render() {
     return html` ${this.polygon
-        ? svg` <div class="triangle-container">
-        <svg height="500" width="1000">
+        ? svg`<div class="svg-container"><div class="triangle-container">
+        <svg class="scaling" viewBox="75 0 400 500">
           <polygon points="50,200 50,400 500,300 500, 100" class="triangle" />
         </svg>
-      </div>`
+      </div></div>`
         : nothing}
 
       <slot></slot>`;
