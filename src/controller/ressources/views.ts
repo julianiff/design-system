@@ -575,52 +575,45 @@ export const Views: ViewType = {
                   ],
                 },
                 {
-                  slotName: 'end-text',
-                  component: 'iff-animated-container',
+                  slotName: '',
+                  component: 'iff-title-lead',
                   props: [],
                   slots: [
                     {
-                      slotName: '',
-                      component: 'iff-title-lead',
-                      props: [],
-                      slots: [
+                      slotName: 'title',
+                      component: 'iff-title',
+                      props: [{level: 2}],
+                      innerText: 'Who am I',
+                      slots: [],
+                    },
+                    {
+                      slotName: 'lead-text',
+                      component: 'iff-text',
+                      props: [{styling: 'paragraph'}],
+                      innerText:
+                        'My name is Julian Iff, I am a Software Engineer and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
+                      slots: [],
+                    },
+                    {
+                      slotName: 'lead-text',
+                      component: 'iff-text',
+                      props: [{styling: 'paragraph'}],
+                      innerText:
+                        'I work in both front- and backend with a dose of pipelines and build processes.',
+                      slots: [],
+                    },
+                    {
+                      slotName: 'lead-text',
+                      component: 'iff-icon-text',
+                      props: [
                         {
-                          slotName: 'title',
-                          component: 'iff-title',
-                          props: [{level: 2}],
-                          innerText: 'Who am I',
-                          slots: [],
+                          href: 'https://www.linkedin.com/in/julian-iff-36882661/',
                         },
-                        {
-                          slotName: 'lead-text',
-                          component: 'iff-text',
-                          props: [{styling: 'paragraph'}],
-                          innerText:
-                            'My name is Julian Iff, I am a Software Engineer and with great enthusiasm, I create new digital products and features that transform how users achieve their goals. I strive to extend my knowledge in all areas of software engineering.',
-                          slots: [],
-                        },
-                        {
-                          slotName: 'lead-text',
-                          component: 'iff-text',
-                          props: [{styling: 'paragraph'}],
-                          innerText:
-                            'I work in both front- and backend with a dose of pipelines and build processes.',
-                          slots: [],
-                        },
-                        {
-                          slotName: 'lead-text',
-                          component: 'iff-icon-text',
-                          props: [
-                            {
-                              href: 'https://www.linkedin.com/in/julian-iff-36882661/',
-                            },
-                            {icon: 'end'},
-                            {target: '_blank'},
-                          ],
-                          innerText: 'Get in Touch!',
-                          slots: [],
-                        },
+                        {icon: 'end'},
+                        {target: '_blank'},
                       ],
+                      innerText: 'Get in Touch!',
+                      slots: [],
                     },
                   ],
                 },
