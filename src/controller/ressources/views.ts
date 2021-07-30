@@ -45,7 +45,7 @@ export const leftSideText = (props: TextTitle) => [
                   {
                     slotName: 'lead-text',
                     component: 'iff-grid-item',
-                    props: [{width: 'slim'}],
+                    props: [{width: 'slim'}, {polygon: true}],
                     innerText: '',
                     slots: [
                       {
@@ -401,6 +401,29 @@ export const Views: ViewType = {
                               props: [{styling: 'label'}],
                               innerText: 'Spring-Boot',
                               slots: [],
+                            },
+                          ],
+                        },
+                        {
+                          slotName: '',
+                          component: 'iff-animated-container',
+                          props: [],
+                          innerText: '',
+                          slots: [
+                            {
+                              slotName: '',
+                              component: 'iff-button',
+                              props: [{disabled: 'true'}],
+                              innerText: '',
+                              slots: [
+                                {
+                                  slotName: '',
+                                  component: 'iff-text',
+                                  props: [{styling: 'label'}],
+                                  innerText: 'K8s',
+                                  slots: [],
+                                },
+                              ],
                             },
                           ],
                         },

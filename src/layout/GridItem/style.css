@@ -1,3 +1,17 @@
+.triangle-container {
+  position: absolute;
+}
+.triangle {
+  opacity: 10%;
+  fill: var(--iff-alias__color--positive);
+  stroke: var(--iff-alias__background-color--secondary);
+  stroke-width: 8;
+}
+
+:host {
+  position: relative;
+}
+
 :host([orientation='start']) {
   justify-self: start;
 }

@@ -1,4 +1,4 @@
-import {LitElement, html} from 'lit';
+import {LitElement, html, svg, nothing} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 import style from './style.css';
 
@@ -42,13 +42,27 @@ export class GridItem extends LitElement {
   public height?: gridHeight;
 
   /**
+   * Background Polygon
+   */
+  @property({type: Boolean})
+  public polygon: Boolean = false;
+
+  /**
    * Background Color
    */
   @property({reflect: true})
   public background?: gridBackground;
 
   render() {
-    return html`<slot></slot>`;
+    return html` ${this.polygon
+        ? svg` <div class="triangle-container">
+        <svg height="500" width="1000">
+          <polygon points="50,200 50,400 500,300 500, 100" class="triangle" />
+        </svg>
+      </div>`
+        : nothing}
+
+      <slot></slot>`;
   }
 }
 

@@ -14,14 +14,15 @@ import {flip} from '@lit-labs/motion';
 export class AnimatedContainer extends LitElement {
   static styles = css`
     .box {
-      transform: rotate3d(0);
+      transform: translateX(10px);
     }
 
     .shifted {
-      transform: rotate3d(1, 1, 0, 10deg);
+      transform: translateX(0px);
     }
   `;
 
+  // Intersection Observer and then slow fade in of elements
   /**
    * The number of times the button has been clicked.
    */
@@ -34,7 +35,7 @@ export class AnimatedContainer extends LitElement {
         @mouseenter=${this._toggle}
         @mouseleave=${this._toggle}
         class="box ${this.shifted ? 'shifted' : ''}"
-        ${flip({properties: ['transform', 'box-shadow']})}
+        ${flip({properties: ['transform', 'opacity']})}
       >
         <slot></slot>
       </div>
@@ -42,7 +43,6 @@ export class AnimatedContainer extends LitElement {
   }
 
   _toggle(e: any) {
-    console.log('ehr', e);
     this.shifted = !this.shifted;
   }
 }
