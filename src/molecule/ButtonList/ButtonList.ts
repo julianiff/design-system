@@ -1,5 +1,5 @@
 import '../../atom/Title';
-import {LitElement, html, css} from 'lit';
+import {LitElement, html} from 'lit';
 import {customElement, property, state} from 'lit/decorators.js';
 import style from './style.css';
 

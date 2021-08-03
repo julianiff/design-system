@@ -44,7 +44,6 @@ export class Header extends LitElement {
   scrollIndicator: boolean = false;
 
   render() {
-    console.log(this.style);
     this.position = this.offsetController.offsetTop || 0;
     return html`<slot></slot> `;
   }
