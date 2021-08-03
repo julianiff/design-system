@@ -2,6 +2,7 @@
   --iff-button__background-color: var(--iff-alias__body--background-color);
   --iff-button__state--box-shadow: inset 0 0 0 1px
     var(--iff-alias__background-color--secondary);
+  --iff-button__state--opacity: 100%;
 }
 
 .button {
@@ -17,6 +18,11 @@
   --iff-state__font--color: var(
     --iff-button__font--color,
     var(--iff-alias__background-color--secondary)
+  );
+
+  opacity: var(
+    --iff-button__state--opacity,
+    var(--iff-button__effect--opacity, 100%)
   );
 
   box-shadow: var(

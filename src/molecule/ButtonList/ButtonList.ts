@@ -21,15 +21,20 @@ export class ButtonList extends LitElement {
   private buttonEffect: string =
     'inset 0 0 0 3px var(--iff-alias__background-color--secondary)';
 
+  @state()
+  private buttonsOpacity: string = '75%';
+
   render() {
     this.highlightActive &&
       window.setTimeout(() => {
         this.buttonEffect = 'initial';
+        this.buttonsOpacity = 'initial';
       }, 200);
     return html`
       <style>
         :host {
           --iff-button__effect--box-shadow: ${this.buttonEffect};
+          --iff-button__effect--opacity: ${this.buttonsOpacity};
         }
       </style>
 
