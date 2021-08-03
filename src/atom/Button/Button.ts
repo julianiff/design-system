@@ -16,16 +16,18 @@ export class Button extends LitElement {
   /**
    * Type of styling
    */
-  @property({reflect: true})
+  @property()
   public event?: viewVariants;
 
   /**
    * Event Payload
    */
-  @property({reflect: true})
+  @property()
   public eventPayload: string = 'payload';
-  @property({reflect: true})
+
+  @property()
   public href?: string;
+
   /**
    * Type of styling
    */
@@ -36,7 +38,8 @@ export class Button extends LitElement {
     return this.href
       ? html`
           <iff-link href=${this.href}>
-            <button
+            <div
+              class="button"
               @click=${() => {
                 if (this.event) {
                   const event = new LitCoilConnectedEvent(this.event);
@@ -44,11 +47,14 @@ export class Button extends LitElement {
                 }
               }}
             >
+              <slot name="prefix"></slot>
               <slot></slot>
-            </button>
+              <slot name="suffix"></slot>
+            </div>
           </iff-link>
         `
       : html`<button
+          class="button"
           @click=${() => {
             if (this.event) {
               const event = new LitCoilConnectedEvent(this.event);
