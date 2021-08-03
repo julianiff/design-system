@@ -488,7 +488,10 @@ export const Views: ViewType = {
                             {
                               slotName: '',
                               component: 'iff-button',
-                              props: [{href: '/project/design-system/'}],
+                              props: [
+                                {href: '/project/design-system/'},
+                                {rel: 'noopener'},
+                              ],
                               innerText: '',
                               slots: [
                                 {
@@ -541,7 +544,10 @@ export const Views: ViewType = {
                             {
                               slotName: '',
                               component: 'iff-button',
-                              props: [{href: '/project/apollo/'}],
+                              props: [
+                                {href: '/project/apollo/'},
+                                {rel: 'noopener'},
+                              ],
                               innerText: '',
                               slots: [
                                 {

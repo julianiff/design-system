@@ -4,6 +4,7 @@ import {customElement, property} from 'lit/decorators.js';
 import {viewVariants} from '../../controller/ressources/views';
 import {LitCoilConnectedEvent} from '../../controller/UpdateControllerConnectedEvent';
 import style from './style.css';
+import { ifDefined } from 'lit/directives/if-defined';
 /**
  * Text Styling Component
  *
@@ -28,6 +29,9 @@ export class Button extends LitElement {
   @property()
   public href?: string;
 
+  @property()
+  public rel?: string;
+
   /**
    * Type of styling
    */
@@ -37,7 +41,7 @@ export class Button extends LitElement {
   render() {
     return this.href
       ? html`
-          <iff-link href=${this.href}>
+          <iff-link href=${this.href} rel=${ifDefined(this.rel)}>
             <div
               class="button"
               @click=${() => {
