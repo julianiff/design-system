@@ -207,6 +207,13 @@ export const Views: ViewType = {
                               innerText: 'Typescript',
                               slots: [],
                             },
+                            {
+                              slotName: 'prefix',
+                              component: 'iff-text',
+                              props: [{styling: 'label'}],
+                              innerText: 'Typescript',
+                              slots: [],
+                            },
                           ],
                         },
                         {

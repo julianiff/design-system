@@ -14,6 +14,7 @@ import './organism/Header';
 import './organism/Footer';
 import './organism/Navigation';
 import './organism/ScrollIndicator';
+import './organism/SlidingText';
 import './template/PageLayout';
 import './template/SplitAnim';
 import './template/RowLayout';

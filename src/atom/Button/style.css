@@ -5,7 +5,16 @@
   --iff-button__state--opacity: 100%;
 }
 
+:slotted(*) {
+  --iff-state__font--color: var(
+    --iff-button__font--color,
+    var(--iff-alias__background-color--secondary)
+  );
+}
+
 .button {
+  display: flex;
+  flex-direction: row;
   border: none;
   cursor: pointer;
   transition: var(--iff-alias__transition);
@@ -41,13 +50,6 @@
   border-radius: var(
     --iff-button__border--radius,
     var(--iff-alias__border--radius)
-  );
-}
-
-:slotted(*) {
-  --iff-state__font--color: var(
-    --iff-button__font--color,
-    var(--iff-alias__background-color--secondary)
   );
 }
 

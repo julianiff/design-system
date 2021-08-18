@@ -1,0 +1,133 @@
+:host {
+  --iff-sliding-text__animation--duration: 4s;
+  --iff-sliding-text__animation--ease: cubic-bezier(0.85, 0, 0.15, 1);
+
+  --iff-title__line-height: 1;
+  --iff-title__text-transform: uppercase;
+  --iff-state__font--color: white;
+
+  margin: 0;
+  padding: 0;
+  background-image: transparent;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  align-items: center;
+  background-color: transparent;
+}
+
+span {
+  display: block;
+}
+
+figure {
+  text-align: center;
+  font-size: min(6vw, 120px);
+  white-space: nowrap;
+}
+
+blockquote {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+
+.colored-text {
+  position: absolute;
+  color: var(--iff-alias__color--complement, #fff);
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: moveTopColoredClip var(--iff-sliding-text__animation--duration)
+    var(--iff-sliding-text__animation--ease) infinite alternate;
+  display: block;
+}
+
+.colored-text__second {
+  --iff-title__line-height: 2;
+  top: 50%;
+  animation: moveBottomColoredClip var(--iff-sliding-text__animation--duration)
+    var(--iff-sliding-text__animation--ease) infinite alternate;
+}
+
+.container {
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+  padding: 0px 80px;
+
+  animation: moveCutClip var(--iff-sliding-text__animation--duration)
+    var(--iff-sliding-text__animation--ease) infinite alternate;
+}
+
+.container__cut-text {
+  background: transparent;
+  margin: 0;
+}
+
+.container iff-title {
+  --iff-state__font--color: black;
+  --iff-title__mix-blend-mode: darken;
+
+  background-color: #fff;
+}
+
+cite {
+  font-style: normal;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.4em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  animation: fadeInAuthor var(--iff-sliding-text__animation--duration)
+    var(--iff-sliding-text__animation--ease) infinite alternate;
+}
+
+figcaption {
+  line-height: 0.4;
+}
+
+@keyframes moveCutClip {
+  0%,
+  25% {
+    clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 50%, 0% 50%);
+  }
+  75%,
+  100% {
+    clip-path: polygon(35px 50%, 100% 50%, calc(100% - 35px) 100%, 0% 100%);
+  }
+}
+
+@keyframes moveTopColoredClip {
+  0%,
+  25% {
+    clip-path: polygon(35px -100%, 100% -100%, calc(100% - 35px) 0%, 0% 0%);
+  }
+  75%,
+  100% {
+    clip-path: polygon(35px 00%, 100% 0%, calc(100% - 35px) 100%, 0% 100%);
+  }
+}
+
+@keyframes moveBottomColoredClip {
+  0%,
+  25% {
+    clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 100%, 0% 100%);
+  }
+  75%,
+  100% {
+    clip-path: polygon(35px 100%, 100% 100%, calc(100% - 35px) 200%, 0% 200%);
+  }
+}
+
+@keyframes fadeInAuthor {
+  0%,
+  25% {
+    opacity: 0;
+  }
+  75%,
+  100% {
+    opacity: 1;
+  }
+}

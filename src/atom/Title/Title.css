@@ -8,7 +8,9 @@ h4 {
   font-weight: var(--iff-text__font--weight);
   text-align: var(--iff-text__text--align);
   transition: var(--iff-alias__transition);
-  line-height: 2em;
+  line-height: var(--iff-title__line-height, 2em);
+  text-transform: var(--iff-title__text-transform, none);
+  mix-blend-mode: var(--iff-title__mix-blend-mode);
   color: var(
     --iff-hover__font--color,
     var(
@@ -33,6 +35,10 @@ h4 {
   --iff-text__font--weight: var(--iff-font-alias__weight--bold);
   font-size: var(--iff-title__font-size, var(--iff__dimension--19));
   line-height: 150%;
+}
+
+:host([fontSize='dynamic']) {
+  --iff-title__font-size: min(6vw, 120px)
 }
 
 :host([textAlign='left']) {

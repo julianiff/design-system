@@ -32,59 +32,92 @@
     </style>
   </head>
   <body theme="blue-gradiant">
-    <iff-animated-container>
-      <iff-button><iff-text styling="label">Button</iff-text></iff-button>
-    </iff-animated-container>
-    <iff-link><iff-text styling="paragraph">Link paragraph</iff-text></iff-link>
-
-    <iff-icon-text icon="start"
-      ><iff-text slot="text" styling="paragraph-slim"
-        >Link paragraph</iff-text
-      ></iff-icon-text
-    >
-
-    <iff-icon-text icon="end">Link paragraph</iff-icon-text>
-
-    <iff-icon-text icon="start" href="https://google.ch"
-      >Link paragraph</iff-icon-text
-    >
-
-    <iff-text styling="paragraph">paragraph</iff-text>
-    <iff-text styling="paragraph-slim">paragraph-slim</iff-text>
-    <iff-text styling="paragraph" noLineHeight>noLineheight</iff-text>
-    <iff-text styling="paragraph-bold">paragraph-bold</iff-text>
-    <iff-text styling="label">label</iff-text>
-    <iff-title level="1">title h1</iff-title>
-    <iff-title level="2">title h2</iff-title>
-    <iff-title level="3">title h3</iff-title>
-    <iff-title level="4">title h4</iff-title>
-
-    <iff-title level="3">Layout 1-1-1</iff-title>
-    <iff-grid-layout layout="1-1-1">
-      <iff-grid-item style="background-color: green" gridWidth="full">
-        <iff-svg src="./reactive.svg"></iff-svg
-      ></iff-grid-item>
-      <iff-grid-item style="background-color: blue" gridWidth="full"
-        >two</iff-grid-item
+    <style>
+      div {
+        position: absolut;
+        background: linear-gradient(
+            var(--iff-alias__background-color--primary) 0 0
+          ),
+          linear-gradient(
+            90deg,
+            var(--iff-alias__color--complement) 50%,
+            var(--iff-alias__background-color--secondary) 0
+          ),
+          conic-gradient(
+            from 120deg at 50% 0,
+            transparent 120deg,
+            var(--iff-alias__background-color--secondary) 0%
+          ),
+          conic-gradient(
+            from 120deg,
+            var(--iff-alias__background-color--secondary) 120deg,
+            var(--iff-alias__color--complement) 0%
+          );
+        background-size: 5.1961524227em 6em, 10.3923048454em, 5.1961524227em 6em;
+        background-blend-mode: lighten, difference;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+    </style>
+    <div>
+      <iff-animated-container>
+        <iff-button><iff-text styling="label">Button</iff-text></iff-button>
+      </iff-animated-container>
+      <iff-link
+        ><iff-text styling="paragraph">Link paragraph</iff-text></iff-link
       >
-      <iff-grid-item style="background-color: yellow" gridWidth="full"
-        >three</iff-grid-item
-      >
-    </iff-grid-layout>
-    <iff-title level="3">Layout 1-1</iff-title>
-    <iff-grid-layout layout="1-1">
-      <iff-grid-item style="background-color: green" gridWidth="full"
-        >one</iff-grid-item
-      >
-      <iff-grid-item style="background-color: blue" gridWidth="full"
-        >two</iff-grid-item
-      >
-    </iff-grid-layout>
 
-    <iff-base-page view="Intro"></iff-base-page>
-    <iff-base-page view="Node"></iff-base-page>
-    <iff-base-page view="Node"></iff-base-page>
+      <iff-icon-text icon="start"
+        ><iff-text slot="text" styling="paragraph-slim"
+          >Link paragraph</iff-text
+        ></iff-icon-text
+      >
 
-    <iff-footer></iff-footer>
+      <iff-icon-text icon="end">Link paragraph</iff-icon-text>
+
+      <iff-icon-text icon="start" href="https://google.ch"
+        >Link paragraph</iff-icon-text
+      >
+
+      <iff-text styling="paragraph">paragraph</iff-text>
+      <iff-text styling="paragraph-slim">paragraph-slim</iff-text>
+      <iff-text styling="paragraph" noLineHeight>noLineheight</iff-text>
+      <iff-text styling="paragraph-bold">paragraph-bold</iff-text>
+      <iff-text styling="label">label</iff-text>
+      <iff-title level="1">title h1</iff-title>
+      <iff-title level="2">title h2</iff-title>
+      <iff-title level="3">title h3</iff-title>
+      <iff-title level="4">title h4</iff-title>
+
+      <iff-title level="3">Layout 1-1-1</iff-title>
+      <iff-grid-layout layout="1-1-1">
+        <iff-grid-item style="background-color: green" gridWidth="full">
+          <iff-svg src="./reactive.svg"></iff-svg
+        ></iff-grid-item>
+        <iff-grid-item style="background-color: blue" gridWidth="full"
+          >two</iff-grid-item
+        >
+        <iff-grid-item style="background-color: yellow" gridWidth="full"
+          >three</iff-grid-item
+        >
+      </iff-grid-layout>
+      <iff-title level="3">Layout 1-1</iff-title>
+      <iff-grid-layout layout="1-1">
+        <iff-grid-item style="background-color: green" gridWidth="full"
+          >one</iff-grid-item
+        >
+        <iff-grid-item style="background-color: blue" gridWidth="full"
+          >two</iff-grid-item
+        >
+      </iff-grid-layout>
+
+      <iff-base-page view="Intro"></iff-base-page>
+      <iff-base-page view="Node"></iff-base-page>
+      <iff-base-page view="Node"></iff-base-page>
+
+      <iff-footer></iff-footer>
+    </div>
   </body>
 </html>

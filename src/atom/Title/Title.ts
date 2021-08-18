@@ -21,6 +21,12 @@ export class Title extends LitElement {
   public textAlign: textAlignVars = 'left';
 
   /**
+   * Type of textAlignation
+   */
+  @property({reflect: true})
+  public fontSize?: String;
+
+  /**
    * Level of styling
    */
   @property({type: Number})
