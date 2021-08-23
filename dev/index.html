@@ -62,9 +62,11 @@
       }
     </style>
     <div>
+    <iff-background-clip>
       <iff-animated-container>
         <iff-button><iff-text styling="label">Button</iff-text></iff-button>
       </iff-animated-container>
+    </iff-background-clip>
       <iff-link
         ><iff-text styling="paragraph">Link paragraph</iff-text></iff-link
       >
@@ -102,6 +104,21 @@
         <iff-grid-item style="background-color: yellow" gridWidth="full"
           >three</iff-grid-item
         >
+      </iff-grid-layout>
+      <iff-title level="3">Layout 1-1 with 75vh</iff-title>
+      <iff-grid-layout layout="1-1" style="--iff-design__grid--layout--height: 75vh;">
+        <iff-grid-item style="background-color: green" gridWidth="full"
+          >
+        <iff-background-clip>
+          <iff-button><iff-text styling="label">Button</iff-text></iff-button>
+        </iff-background-clip>
+          </iff-grid-item
+        >
+        <iff-grid-item style="background-color: blue" gridWidth="full"
+          >two</iff-grid-item
+        >
+      </iff-grid-layout>
+
       </iff-grid-layout>
       <iff-title level="3">Layout 1-1</iff-title>
       <iff-grid-layout layout="1-1">

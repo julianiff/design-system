@@ -1,0 +1,7 @@
+.clipped-background {
+  clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 100%, 0% 100%);
+  background: var(--iff-background-clip__state--backgroundcolor, white);
+  padding-left: 50px;
+  padding-right: 50px;
+  width: fit-content;
+}

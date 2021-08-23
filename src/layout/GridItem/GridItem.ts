@@ -18,13 +18,13 @@ export class GridItem extends LitElement {
   static styles = [style];
 
   /**
-   * Orientation 'positive' | 'negative' | 'complement';
+   * Orientation 'start' | 'end' | 'center';
    */
   @property({reflect: true})
   public orientation: gridOrientation = 'start';
 
   /**
-   * Orientation 'positive' | 'negative' | 'complement';
+   * Orientation 'sm' | 'md' | 'lg' | 'component';
    */
   @property({reflect: true})
   public spacer: spacerVariant = 'sm';

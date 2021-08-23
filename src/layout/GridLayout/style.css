@@ -1,6 +1,7 @@
 :host {
   display: grid;
   grid-template-rows: auto;
+  height: var(--iff-design__grid--layout--height);
 }
 
 :host([layout='1']) {
