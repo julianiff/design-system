@@ -3,6 +3,13 @@
   flex-wrap: wrap;
 }
 ::slotted(*) {
-  --iff-button__padding: var(--iff__dimension--015) var(--iff__dimension--20);
-  margin: var(--iff__spacer--xs) 0;
+  --iff-button__padding: 0;
+  margin: var(--iff__spacer--xxs) 0;
+}
+
+@media screen and (min-width: 1024px) {
+  ::slotted(*) {
+    --iff-button__padding: var(--iff__dimension--015) var(--iff__dimension--20);
+    margin: var(--iff__spacer--xs) 0;
+  }
 }
