@@ -1,7 +1,6 @@
-:host([disabled]) {
-  --iff-button__background-color: var(--iff-alias__body--background-color);
-  --iff-button__state--box-shadow: inset 0 0 0 1px
-    var(--iff-alias__background-color--secondary);
+:host {
+  --iff-button__background-color: transparent;
+  --iff-button__state--box-shadow: none;
   --iff-button__state--opacity: 100%;
 }
 
@@ -16,7 +15,7 @@
   display: flex;
   flex-direction: row;
   border: none;
-  cursor: pointer;
+  cursor: var(--iff-button__cursor, pointer);
   transition: var(--iff-alias__transition);
 
   background-color: var(
@@ -57,4 +56,12 @@
   --iff-button__hover--box-shadow: inset 0 0 0 3px
     var(--iff-alias__background-color--secondary);
   transition: var(--iff-alias__transition);
+}
+
+:host([disabled]) {
+  --iff-button__background-color: transparent;
+  --iff-button__state--box-shadow: transaprent;
+  --iff-button__state--opacity: 100%;
+  --iff-button__cursor: auto;
+  --iiff-clipped-background__state--overlay: 0;
 }

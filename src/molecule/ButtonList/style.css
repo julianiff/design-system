@@ -4,5 +4,5 @@
 }
 ::slotted(*) {
   --iff-button__padding: var(--iff__dimension--015) var(--iff__dimension--20);
-  margin: var(--iff-alias__spacer, var(--iff__spacer--xs));
+  margin: var(--iff__spacer--xs) 0;
 }

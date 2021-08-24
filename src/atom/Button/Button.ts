@@ -1,3 +1,4 @@
+import '../../molecule/BackgroundClip/BackgroundClip';
 import '../Link';
 import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
@@ -41,35 +42,38 @@ export class Button extends LitElement {
   render() {
     return this.href
       ? html`
-          <iff-link href=${this.href} rel=${ifDefined(this.rel)}>
-            <div
-              class="button"
-              @click=${() => {
-                if (this.event) {
-                  const event = new LitCoilConnectedEvent(this.event);
-                  this.dispatchEvent(event);
-                }
-              }}
-            >
-              <slot name="prefix"></slot>
-              <slot></slot>
-              <slot name="suffix"></slot>
-            </div>
-          </iff-link>
+          <iff-background-clip style="--iff-hover__font--color: black;">
+            <iff-link href=${this.href} rel=${ifDefined(this.rel)}>
+              <div
+                class="button"
+                @click=${() => {
+                  if (this.event) {
+                    const event = new LitCoilConnectedEvent(this.event);
+                    this.dispatchEvent(event);
+                  }
+                }}
+              >
+                <slot name="prefix"></slot>
+                <slot></slot>
+                <slot name="suffix"></slot>
+              </div>
+            </iff-link>
+          </iff-background-clip>
         `
-      : html`<button
-          class="button"
-          @click=${() => {
-            if (this.event) {
-              const event = new LitCoilConnectedEvent(this.event);
-              this.dispatchEvent(event);
-            }
-          }}
-        >
-          <slot name="prefix"></slot>
-          <slot></slot>
-          <slot name="suffix"></slot>
-        </button>`;
+      : html`<iff-background-clip style="--iff-hover__font--color: black;">
+          <button
+            class="button"
+            @click=${() => {
+              if (this.event) {
+                const event = new LitCoilConnectedEvent(this.event);
+                this.dispatchEvent(event);
+              }
+            }}
+          >
+            <slot name="prefix"></slot>
+            <slot></slot>
+            <slot name="suffix"></slot></button
+        ></iff-background-clip>`;
   }
 }
 

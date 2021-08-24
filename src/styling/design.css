@@ -29,6 +29,7 @@
   /**
   Spacer System
   */
+  --iff__spacer--xxxs: var(--iff__dimension--03);
   --iff__spacer--xxs: var(--iff__dimension--03);
   --iff__spacer--xs: var(--iff__dimension--05);
   --iff__spacer--sm: var(--iff__dimension--08);

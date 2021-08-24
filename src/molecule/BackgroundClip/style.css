@@ -1,7 +1,35 @@
 .clipped-background {
-  clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 100%, 0% 100%);
+  position: relative;
+  clip-path: polygon(
+    var(--iff-background-clip__angle, 35px) 0%,
+    100% 0%,
+    calc(100% - var(--iff-background-clip__angle, 35px)) 100%,
+    0% 100%
+  );
   background: var(--iff-background-clip__state--backgroundcolor, white);
   padding-left: 50px;
   padding-right: 50px;
   width: fit-content;
+}
+
+.clipped-background:hover {
+  --iff-clipped-background__overlay--opacity: 100%;
+}
+
+.clipped-background:after {
+  clip-path: inset(10% 10% 10% 10%);
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: darken;
+  transition: all 250ms ease-in;
+  opacity: var(
+    --iiff-clipped-background__state--overlay,
+    var(--iff-clipped-background__overlay--opacity, 0)
+  );
+  pointer-events: none;
 }
