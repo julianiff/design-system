@@ -61,7 +61,7 @@ blockquote {
   position: relative;
   background-color: #fff;
   z-index: 1;
-  padding: 0px 80px;
+  padding: 0px calc(6rem + 4.75 * ((100vw - 65rem) / 42));
 
   animation: moveCutClip var(--iff-sliding-text__animation--duration)
     var(--iff-sliding-text__animation--ease) infinite alternate;
@@ -91,18 +91,14 @@ cite {
     var(--iff-sliding-text__animation--ease) infinite alternate;
 }
 
-figcaption {
-  line-height: 0.4;
-}
-
 @keyframes moveCutClip {
   0%,
   25% {
-    clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 50%, 0% 50%);
+    clip-path: polygon(35px 0%, 100% 0%, calc(100% - 35px) 30%, 0% 30%);
   }
   75%,
   100% {
-    clip-path: polygon(35px 50%, 100% 50%, calc(100% - 35px) 100%, 0% 100%);
+    clip-path: polygon(35px 30%, 100% 30%, calc(100% - 35px) 100%, 0% 100%);
   }
 }
 

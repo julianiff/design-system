@@ -31,7 +31,9 @@ export class SlidingText extends LitElement {
                 <slot name="top-front">Julian Iff</slot></iff-title
               >
               <iff-title fontSize="dynamic" textAlign="center"
-                ><slot name="bottom-behind">FullStack Engineer</slot></iff-title
+                ><slot name="bottom-behind"
+                  >FullStack <br />Engineer</slot
+                ></iff-title
               >
             </p>
           </div>

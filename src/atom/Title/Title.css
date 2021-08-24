@@ -38,7 +38,8 @@ h4 {
 }
 
 :host([fontSize='dynamic']) {
-  --iff-title__font-size: calc(2.2rem + 3.75 * ((100vw - 48rem) / 42));
+  --iff-title__font-size: calc(5.2rem + 0.75 * ((100vw - 65rem) / 42));
+  --iff-title__line-height: 2.5em;
 }
 
 :host([textAlign='left']) {
