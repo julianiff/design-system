@@ -35,7 +35,6 @@ export class Header extends LitElement {
   }
 
   private offsetController = new OffsetController(this);
-  private scrollIndicatorController = new ScrollIndicatorController(this);
 
   @property({reflect: true, type: Number})
   position?: number = 0;

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      async
+      src="../node_modules/es-module-shims/dist/es-module-shims.js"
+    ></script>
+    <script
+      async
+      src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"
+    ></script>
+    <script async src="../lib/index.js"></script>
+    <title>Test</title>
+
+    <link rel="stylesheet" href="../lib/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+    </style>
+  </head>
+  <body theme="wood">
+    <style>
+      div {
+        position: absolut;
+        background: linear-gradient(
+            var(--iff-alias__background-color--primary) 0 0
+          ),
+          linear-gradient(
+            90deg,
+            var(--iff-alias__color--complement) 50%,
+            var(--iff-alias__background-color--secondary) 0
+          ),
+          conic-gradient(
+            from 120deg at 50% 0,
+            transparent 120deg,
+            var(--iff-alias__background-color--secondary) 0%
+          ),
+          conic-gradient(
+            from 120deg,
+            var(--iff-alias__background-color--secondary) 120deg,
+            var(--iff-alias__color--complement) 0%
+          );
+        background-size: 5.1961524227em 6em, 10.3923048454em, 5.1961524227em 6em;
+        background-blend-mode: lighten, difference;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+    </style>
+    <div>
+      <iff-grid-layout layout="1" style="min-height: 60vh">
+        <iff-sliding-text></iff-sliding-text>
+      </iff-grid-layout>
+      <iff-grid-layout
+        layout="1-1"
+        style="justify-items: center; min-height: 20vh"
+      >
+        <iff-background-clip style="--iff-hover__font--color: black">
+          <iff-icon-text icon="end" href="/about"
+            ><iff-text slot="text" styling="paragraph-slim">About</iff-text>
+          </iff-icon-text>
+        </iff-background-clip>
+        <iff-background-clip style="--iff-hover__font--color: black">
+          <iff-icon-text icon="end" href="/project"
+            ><iff-text slot="text" styling="paragraph-slim"
+              >Posts</iff-text
+            ></iff-icon-text
+          >
+        </iff-background-clip>
+      </iff-grid-layout>
+    </div>
+  </body>
+</html>
