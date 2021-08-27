@@ -89,7 +89,7 @@ body[theme='light'] {
 
   --iff-alias__font--color: var(--iff__color--black);
   --iff-alias__background-color--primary: var(--iff-alias__color--positive);
-  --iff-alias__background-color--secondary: var(--iff-alias__color--negative);
+  --iff-alias__background-color--secondary: var(--iff-alias__color--accent-one);
 }
 
 body[theme='black'] {
