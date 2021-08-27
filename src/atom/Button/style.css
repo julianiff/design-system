@@ -64,4 +64,5 @@
   --iff-button__state--opacity: 100%;
   --iff-button__cursor: auto;
   --iiff-clipped-background__state--overlay: 0;
+  --iff-background-clip__disabled--background-color: white;
 }

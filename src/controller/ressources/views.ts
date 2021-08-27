@@ -40,7 +40,7 @@ export const leftSideText = (props: TextTitle) => [
                 slotName: 'start-text',
                 component: 'iff-title-lead',
                 props: [],
-                innerText: 'What I like',
+                innerText: 'What i did',
                 slots: [
                   {
                     slotName: 'lead-text',
@@ -185,7 +185,7 @@ export const Views: ViewType = {
                       slotName: 'title',
                       component: 'iff-title',
                       props: [{level: 2}],
-                      innerText: 'What I like',
+                      innerText: 'What i did',
                       slots: [],
                     },
                     {

@@ -42,7 +42,10 @@ export class Button extends LitElement {
   render() {
     return this.href
       ? html`
-          <iff-background-clip style="--iff-hover__font--color: black;">
+          <iff-background-clip
+            backgroundColor="theme"
+            style="--iff-hover__font--color: black;"
+          >
             <iff-link href=${this.href} rel=${ifDefined(this.rel)}>
               <div
                 class="button"
@@ -60,7 +63,10 @@ export class Button extends LitElement {
             </iff-link>
           </iff-background-clip>
         `
-      : html`<iff-background-clip style="--iff-hover__font--color: black;">
+      : html`<iff-background-clip
+          backgroundColor="theme"
+          style="--iff-hover__font--color: black;"
+        >
           <button
             class="button"
             @click=${() => {

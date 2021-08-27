@@ -1,3 +1,10 @@
+:host([backgroundColor='theme']) {
+  --iff-background-clip__state--background-color: var(
+    --iff-background-clip__disabled--background-color,
+    var(--iff-alias__background-color--secondary)
+  );
+}
+
 .clipped-background {
   position: relative;
   clip-path: polygon(
@@ -6,7 +13,7 @@
     calc(100% - var(--iff-background-clip__angle, 35px)) 100%,
     0% 100%
   );
-  background: var(--iff-background-clip__state--backgroundcolor, white);
+  background: var(--iff-background-clip__state--background-color, white);
   padding-left: 50px;
   padding-right: 50px;
   width: fit-content;
