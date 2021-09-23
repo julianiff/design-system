@@ -24,6 +24,7 @@ export class AnimatedContainer extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
+
     // Intersection Observer and then slow fade in of elements
     this.observer = new IntersectionObserver((entry) => {
       if (entry[0].intersectionRatio > 0) {
