@@ -1,6 +1,8 @@
 import '../atom/Title';
 import {LitElement, html, css} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
+import {animate, fadeInSlow} from '@lit-labs/motion';
+import {createRef, ref} from 'lit/directives/ref.js';
 
 /**
  * Card to display articles
@@ -11,36 +13,51 @@ import {customElement, property} from 'lit/decorators.js';
 @customElement('iff-animated-container')
 export class AnimatedContainer extends LitElement {
   static styles = css`
-    .box {
-      transform: translateX(0px);
+    .hidden {
+      opacity: 0;
     }
 
     .shifted {
-      transform: translateX(-5px);
+      opacity: 100%;
     }
   `;
 
-  // Intersection Observer and then slow fade in of elements
-  /**
-   * The number of times the button has been clicked.
-   */
+  connectedCallback() {
+    super.connectedCallback();
+    // Intersection Observer and then slow fade in of elements
+    this.observer = new IntersectionObserver((entry) => {
+      if (entry[0].intersectionRatio > 0) {
+        this.activeAnimation = true;
+      }
+    });
+  }
+
   @property({type: Boolean})
   shifted = false;
 
+  @property({type: Boolean})
+  activeAnimation = false;
+
+  @property({type: Object})
+  observer?: any;
+
   render() {
+    const inputRef = createRef();
+    this.observer.observe(this);
+
     return html`
       <div
-        @mouseenter=${this._toggle}
-        @mouseleave=${this._toggle}
-        class="box ${this.shifted ? 'shifted' : ''}"
+        ${ref(inputRef)}
+        class="hidden ${this.activeAnimation ? 'shifted' : ''}"
+        ${this.activeAnimation
+          ? animate({
+              in: fadeInSlow,
+            })
+          : ''}
       >
         <slot></slot>
       </div>
     `;
-  }
-
-  _toggle() {
-    this.shifted = !this.shifted;
   }
 }
 
