@@ -5,7 +5,7 @@ import {customElement, property} from 'lit/decorators.js';
 import {viewVariants} from '../../controller/ressources/views';
 import {LitCoilConnectedEvent} from '../../controller/UpdateControllerConnectedEvent';
 import style from './style.css';
-import {ifDefined} from 'lit/directives/if-defined';
+import {ifDefined} from 'lit/directives/if-defined.js';
 /**
  * Text Styling Component
  *

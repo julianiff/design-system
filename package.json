@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "IFF Design System in lit 2.0",
   "main": "lib/index.js",
+  "module": "lib/index.js",
   "type": "module",
   "scripts": {
-    "serve": "concurrently \"web-dev-server --open dev/ --node-resolve --watch\" \"npm run watch\" \"tsc --noEmit\"",
+    "serve": "MODE=dev concurrently \"web-dev-server --open dev/ --node-resolve --watch\" \"npm run watch\" \"tsc --noEmit\"",
     "build": "node .esbuild.js",
     "watch": "node .esbuild.watch.js",
     "test": "echo \"Error: no test specified\" && exit 1",

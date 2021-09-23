@@ -1,6 +1,6 @@
 import {LitElement, html, css} from 'lit';
 import {customElement} from 'lit/decorators.js';
-import {styleMap} from 'lit/directives/style-map';
+import {styleMap} from 'lit/directives/style-map.js';
 import {ScrollIndicatorController} from '../controller/scrollIndicatorController copy';
 
 /**

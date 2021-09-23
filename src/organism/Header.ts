@@ -2,7 +2,6 @@ import './Navigation';
 import {LitElement, html, css} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 import {OffsetController} from '../controller/offset-controller';
-import {ScrollIndicatorController} from '../controller/scrollIndicatorController copy';
 
 /**
  * Text Styling Component

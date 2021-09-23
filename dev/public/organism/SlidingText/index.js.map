@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../src/organism/SlidingText/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,WAAW,EAAC,MAAM,eAAe,CAAC","sourcesContent":["export {SlidingText} from './SlidingText';\n"]}

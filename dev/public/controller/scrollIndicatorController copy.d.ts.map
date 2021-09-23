@@ -1,0 +1,1 @@
+{"version":3,"file":"scrollIndicatorController copy.d.ts","sourceRoot":"","sources":["../../../src/controller/scrollIndicatorController copy.ts"],"names":[],"mappings":"AAAA,OAAO,EAAC,kBAAkB,EAAE,sBAAsB,EAAC,MAAM,KAAK,CAAC;AAI/D,qBAAa,yBAA0B,YAAW,kBAAkB;IAClE,OAAO,CAAC,IAAI,CAAyB;IACrC,KAAK,CAAC,EAAE,MAAM,CAAC;gBAEH,IAAI,EAAE,sBAAsB;IAKxC,aAAa;IAMb,gBAAgB;IAEhB,SAAS;CAQV"}
