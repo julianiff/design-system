@@ -1,3 +1,3 @@
 # design-system
 
-Lit 2.0 based components
+Lit 2.0 based components.
