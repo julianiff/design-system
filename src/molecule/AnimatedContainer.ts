@@ -1,8 +1,6 @@
 import '../atom/Title';
 import {LitElement, html, css} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
-//@ts-ignore
-import {flip} from '@lit-labs/motion';
 
 /**
  * Card to display articles
@@ -35,7 +33,6 @@ export class AnimatedContainer extends LitElement {
         @mouseenter=${this._toggle}
         @mouseleave=${this._toggle}
         class="box ${this.shifted ? 'shifted' : ''}"
-        ${flip({properties: ['transform', 'opacity']})}
       >
         <slot></slot>
       </div>

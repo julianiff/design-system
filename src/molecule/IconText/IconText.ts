@@ -6,7 +6,7 @@ import {customElement, property} from 'lit/decorators.js';
 import {LitCoilConnectedEvent} from '../../controller/UpdateControllerConnectedEvent';
 import {viewVariants} from '../../controller/ressources/views';
 import {targetVariations} from '../../atom/Link/Link';
-import {ifDefined} from 'lit/directives/if-defined';
+import {ifDefined} from 'lit/directives/if-defined.js';
 
 import style from './style.css';
 /**
