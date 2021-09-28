@@ -1,7 +1,5 @@
 import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
-import {ifDefined} from 'lit/directives/if-defined.js';
-import {classMap} from 'lit/directives/class-map.js';
 
 import style from './style.css';
 /**

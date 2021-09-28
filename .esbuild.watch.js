@@ -20,7 +20,7 @@ const buildAsIndependentBundles = (indexDir = './src/index.ts') => {
 // Cleanup Build Dir
 rimraf.sync(OUTPUT_DIR);
 
-//Build Independent Bundles
+//Watch Independent Bundles
 build({
   entryPoints: buildAsIndependentBundles(),
   outdir: OUTPUT_DIR,

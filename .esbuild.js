@@ -3,11 +3,12 @@ import {litCssPlugin} from 'esbuild-plugin-lit-css';
 import fs from 'fs';
 import rimraf from 'rimraf';
 import chalk from 'chalk';
+import {minifyTemplates, writeFiles} from 'esbuild-minify-templates';
 
 const OUTPUT_DIR = './lib';
 
 // Read index.ts and build bundles
-const buildAsIndependentBundles = (indexDir = './src/index.ts') => {
+const buildAsIndependentBundles = (indexDir = 'src/index.ts') => {
   const data = fs.readFileSync(indexDir, 'UTF-8');
   const lines = data.split(/\r?\n/);
   const entries = lines
@@ -27,15 +28,20 @@ rimraf.sync(OUTPUT_DIR);
 
 //Build Independent Bundles
 build({
-  entryPoints: buildAsIndependentBundles(),
+  entryPoints: ['src/index.ts'],
   outdir: OUTPUT_DIR,
   bundle: true,
   minify: true,
-  sourcemap: true,
   color: true,
-  format: 'esm',
   plugins: [litCssPlugin({uglify: true})],
-});
+  sourcemap: true,
+  write: false,
+})
+  .then(minifyTemplates)
+  .then(writeFiles)
+  .catch((e) => {
+    throw e;
+  });
 
 // Build Styling
 build({
