@@ -38,6 +38,5 @@
 } */
 
 .elevation {
-  filter: drop-shadow(14px 6px 10px var(--shadow-color__layer--one))
-    drop-shadow(59px 25px 80px var(--shadow-color__layer--two));
+  filter: drop-shadow(10px 6px 6px var(--shadow-color__layer--one));
 }
