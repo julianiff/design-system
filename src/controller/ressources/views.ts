@@ -481,27 +481,19 @@ export const Views: ViewType = {
                         },
                         {
                           slotName: '',
-                          component: 'iff-animated-container',
-                          props: [],
+                          component: 'iff-button',
+                          props: [
+                            {href: '/project/design-system/'},
+                            {rel: 'noopener'},
+                          ],
                           innerText: '',
                           slots: [
                             {
                               slotName: '',
-                              component: 'iff-button',
-                              props: [
-                                {href: '/project/design-system/'},
-                                {rel: 'noopener'},
-                              ],
-                              innerText: '',
-                              slots: [
-                                {
-                                  slotName: '',
-                                  component: 'iff-text',
-                                  props: [{styling: 'label'}],
-                                  innerText: 'Design System',
-                                  slots: [],
-                                },
-                              ],
+                              component: 'iff-text',
+                              props: [{styling: 'label'}],
+                              innerText: 'Design System',
+                              slots: [],
                             },
                           ],
                         },
@@ -537,27 +529,19 @@ export const Views: ViewType = {
                         },
                         {
                           slotName: '',
-                          component: 'iff-animated-container',
-                          props: [],
+                          component: 'iff-button',
+                          props: [
+                            {href: '/project/apollo/'},
+                            {rel: 'noopener'},
+                          ],
                           innerText: '',
                           slots: [
                             {
                               slotName: '',
-                              component: 'iff-button',
-                              props: [
-                                {href: '/project/apollo/'},
-                                {rel: 'noopener'},
-                              ],
-                              innerText: '',
-                              slots: [
-                                {
-                                  slotName: '',
-                                  component: 'iff-text',
-                                  props: [{styling: 'label'}],
-                                  innerText: 'Apollo / GraphQL',
-                                  slots: [],
-                                },
-                              ],
+                              component: 'iff-text',
+                              props: [{styling: 'label'}],
+                              innerText: 'Apollo / GraphQL',
+                              slots: [],
                             },
                           ],
                         },
