@@ -64,6 +64,11 @@
     --iff-state__button--border-radius,
     var(--iff__dimension--05)
   );
+
+  /**
+  Box shadow
+  */
+  --shadow-color: rgba(255, 255, 255, 0.55);
 }
 
 @media screen and (min-width: 1024px) {
@@ -90,6 +95,8 @@ body[theme='light'] {
   --iff-alias__font--color: var(--iff__color--black);
   --iff-alias__background-color--primary: var(--iff-alias__color--positive);
   --iff-alias__background-color--secondary: var(--iff-alias__color--accent-one);
+  --shadow-color__layer--one: rgba(0, 0, 0, 0.07);
+  --shadow-color__layer--two: rgba(0, 0, 0, 0.14);
 }
 
 body[theme='black'] {
@@ -105,6 +112,8 @@ body[theme='black'] {
   --iff-alias__font--color: var(--iff-alias__color--negative);
   --iff-alias__background-color--primary: var(--iff-alias__color--positive);
   --iff-alias__background-color--secondary: var(--iff-alias__color--negative);
+  --shadow-color__layer--one: rgba(255, 255, 255, 0.27);
+  --shadow-color__layer--two: rgba(255, 255, 255, 0.14);
 }
 
 body[theme='blue-gradiant'] {
@@ -121,6 +130,8 @@ body[theme='blue-gradiant'] {
   --iff-alias__font--color: var(--iff-alias__color--negative);
   --iff-alias__background-color--primary: var(--iff-alias__color--positive);
   --iff-alias__background-color--secondary: var(--iff-alias__color--negative);
+  --shadow-color__layer--one: rgba(255, 255, 255, 0.27);
+  --shadow-color__layer--two: rgba(255, 255, 255, 0.14);
 }
 
 body[theme='redGreen'] {
@@ -136,6 +147,8 @@ body[theme='redGreen'] {
   --iff-alias__font--color: var(--iff-alias__color--negative);
   --iff-alias__background-color--primary: var(--iff-alias__color--positive);
   --iff-alias__background-color--secondary: var(--iff-alias__color--negative);
+  --shadow-color__layer--one: rgba(0, 0, 0, 0.07);
+  --shadow-color__layer--two: rgba(0, 0, 0, 0.14);
 }
 
 body[theme='triColor'] {
@@ -151,6 +164,8 @@ body[theme='triColor'] {
   --iff-alias__font--color: var(--iff-alias__color--negative);
   --iff-alias__background-color--primary: var(--iff-alias__color--positive);
   --iff-alias__background-color--secondary: var(--iff-alias__color--negative);
+  --shadow-color__layer--one: rgba(255, 255, 255, 0.27);
+  --shadow-color__layer--two: rgba(255, 255, 255, 0.14);
 }
 
 body[theme='wood'] {
@@ -166,6 +181,8 @@ body[theme='wood'] {
   --iff-alias__font--color: var(--iff-alias__color--negative);
   --iff-alias__background-color--primary: var(--iff-alias__color--positive);
   --iff-alias__background-color--secondary: var(--iff-alias__color--negative);
+  --shadow-color__layer--one: rgba(255, 255, 255, 0.27);
+  --shadow-color__layer--two: rgba(255, 255, 255, 0.14);
 }
 
 body[theme='blueGreen'] {
@@ -181,21 +198,8 @@ body[theme='blueGreen'] {
   --iff-alias__font--color: var(--iff-alias__color--negative);
   --iff-alias__background-color--primary: var(--iff-alias__color--positive);
   --iff-alias__background-color--secondary: var(--iff-alias__color--negative);
-}
-
-body[theme='spotify'] {
-  --iff-alias__color--positive: #c3f1c7;
-  --iff-alias__color--negative: black;
-  --iff-alias__color--complement: #9954eb;
-  --iff-alias__color--accent-one: #54aa50;
-  --iff-alias__color--accent-two: #428c3b;
-  --iff-alias__color--accent-three: #1b6c75;
-  --iff-alias__body--background-color: var(--iff__color--white);
-  --iff-alias__header--background-color: var(--iff__color--white);
-
-  --iff-alias__font--color: var(--iff-alias__color--negative);
-  --iff-alias__background-color--primary: var(--iff-alias__color--positive);
-  --iff-alias__background-color--secondary: var(--iff-alias__color--negative);
+  --shadow-color__layer--one: rgba(0, 0, 0, 0.07);
+  --shadow-color__layer--two: rgba(0, 0, 0, 0.14);
 }
 
 body[theme='pantone'] {
@@ -213,4 +217,6 @@ body[theme='pantone'] {
   --iff-alias__background-color--secondary: var(--iff-alias__color--negative);
   --iff-alias__font--family: 'Bitter', serif;
   --iff-alias__border--radius: 0rem;
+  --shadow-color__layer--one: rgba(0, 0, 0, 0.07);
+  --shadow-color__layer--two: rgba(0, 0, 0, 0.14);
 }

@@ -7,23 +7,19 @@
 
 .clipped-background {
   position: relative;
-  clip-path: polygon(
-    var(--iff-background-clip__angle, 35px) 0%,
-    100% 0%,
-    calc(100% - var(--iff-background-clip__angle, 35px)) 100%,
-    0% 100%
-  );
+  clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 30px 100%, 0 50%);
   background: var(--iff-background-clip__state--background-color, white);
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: var(--iff__dimension--30);
+  padding-right: var(--iff__dimension--15);
   width: fit-content;
+  margin: 0 1rem 0 1rem;
 }
 
 .clipped-background:hover {
   --iff-clipped-background__overlay--opacity: 100%;
 }
 
-.clipped-background:after {
+/* .clipped-background:after {
   clip-path: inset(10% 10% 10% 10%);
   content: '';
   position: absolute;
@@ -35,8 +31,13 @@
   mix-blend-mode: darken;
   transition: all 250ms ease-in;
   opacity: var(
-    --iiff-clipped-background__state--overlay,
+    --iff-clipped-background__state--overlay,
     var(--iff-clipped-background__overlay--opacity, 0)
   );
   pointer-events: none;
+} */
+
+.elevation {
+  filter: drop-shadow(14px 6px 10px var(--shadow-color__layer--one))
+    drop-shadow(59px 25px 80px var(--shadow-color__layer--two));
 }

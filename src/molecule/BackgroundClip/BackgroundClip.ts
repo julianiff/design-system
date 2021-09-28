@@ -1,5 +1,7 @@
 import {LitElement, html} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
+import {ifDefined} from 'lit/directives/if-defined.js';
+import {classMap} from 'lit/directives/class-map.js';
 
 import style from './style.css';
 /**
@@ -19,7 +21,11 @@ export class BackgroundClip extends LitElement {
   backgroundColor?: 'theme' | 'white' | 'black' | undefined;
 
   render() {
-    return html`<div class="clipped-background"><slot></slot></div>`;
+    return html`<div class="elevation">
+      <div class="clipped-background">
+        <slot></slot>
+      </div>
+    </div>`;
   }
 }
 
