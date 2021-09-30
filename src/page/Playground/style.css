@@ -1,0 +1,24 @@
+:host {
+  --iff-playground__border--width: 5rem;
+  --iff-playground__dimensions--width: 200vw;
+  --iff-playground__dimensions--height: 200vh;
+}
+
+.background {
+  position: relative;
+  width: var(--iff-playground__dimensions--width);
+  height: var(--iff-playground__dimensions--height);
+  background-color: black;
+  overflow: scroll;
+}
+
+.background::after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: var(--iff-playground__border--width) solid white;
+  pointer-events: none;
+}
