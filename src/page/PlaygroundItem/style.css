@@ -1,0 +1,11 @@
+:host {
+  border: var(--iff-playground-item__border--width, var(--iff__dimension--05))
+    solid
+    var(
+      --iff-playground-item__background-color--secondary,
+      var(--iff-alias__background-color--secondary)
+    );
+  width: var(--iff-playground-item__width, fit-content);
+  padding: var(--iff__spacer--lg);
+  border-radius: var(--iff-alias__border--radius);
+}

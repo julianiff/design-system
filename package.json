@@ -34,9 +34,11 @@
   "dependencies": {
     "json-to-lit-transformer": "^0.0.4",
     "lit": "^2.0.0-rc.2",
-    "rxjs": "^6.6.7"
+    "rxjs": "^6.6.7",
+    "three": "^0.133.1"
   },
   "devDependencies": {
+    "@types/three": "^0.133.0",
     "@lit-labs/motion": "^1.0.0-rc.2",
     "@types/jest": "^26.0.24",
     "@typescript-eslint/eslint-plugin": "^2.27.0",

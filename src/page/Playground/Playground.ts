@@ -5,6 +5,7 @@ import {
   RandomPosition,
   InteractionContext,
 } from './scripts';
+import {WrapInCard} from './scripts/WrapInCard';
 import style from './style.css';
 
 const PLAYGROUND_TAG = 'iff-playground';
@@ -28,7 +29,7 @@ export class Playground extends LitElement {
   public disabled: boolean = false;
 
   render() {
-    return html`<div class="background">
+    return html`<div class="playground">
       <slot @slotchange=${(e: Event) => this.mediateSlot(e)}></slot>
     </div> `;
   }
@@ -39,9 +40,8 @@ export class Playground extends LitElement {
       .assignedNodes()
       .filter((item) => item.nodeName.includes('-'));
 
-    new InteractionContext(
-      new RandomPosition(isValidSlotElement)
-    ).setPosition();
+    // console.log(isValidSlotElement);
+    new InteractionContext(new WrapInCard(isValidSlotElement)).setPosition();
   }
 }
 

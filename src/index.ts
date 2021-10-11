@@ -24,3 +24,5 @@ import './template/ThirdOneLayout';
 import './template/SlimLayout';
 import './page/BasePage';
 import './page/Playground';
+import './page/PlaygroundItem';
+import './page/WebGLPlayground';
